@@ -11,11 +11,11 @@ While the ability of an I-string insulator to swing is beneficial due to its fle
 
 This post will present derivations of the equations necessary to perform I-string insulator swing checks, as well as to determine the deflected wire attachment location in space for use in sag-tension or other calculations.
 
-![i-string-rod](https://lh3.googleusercontent.com/1a8S0UySYqXXl5uomEaYM56nE3I3B0qh5vBRBc0GHU2ZBfUN_BNQ9pJB11ucanif-xbYJry6jC5R4lJW4MInW3UWIMN07YNaHjOjJ6lSXCgm5SRq6rxPc3FIYYaU77zhA06nUau5Nw)
+![i-string-rod](https://user-images.githubusercontent.com/23442063/133910315-f4e2e29b-1cb1-47fd-aab3-3605ab103cc4.jpg)
 
 **Figure 1: Double I-String Insulator with Rods**
 
-![i-string-bell](https://lh3.googleusercontent.com/ARHucZMiEsDzKJZsI1KFYO39PpOL3K8Kt3tgtDsrYIrbTBEeLM1oqm6Rab_Et1PZm4h9QtCDVz7lkJJQJg5Beu558QiWvqbcje4kgnp7GzQ2PVO-qf8VmTzIPTd_D3Cym2vOg8mRuQ)
+![i-string-bell](https://user-images.githubusercontent.com/23442063/133910316-dc962bee-29ea-4465-a756-63ee941425c8.jpg)
 
 **Figure 2: I-String Insulator with Bells**
 
@@ -29,7 +29,7 @@ Figure 3 shows the geometry of a swinging insulator with the following applied l
 * $ W_h = $ horizontal wire wind and/or tension load
 * $ W_v = $ vertical wire weight and/or ice load
 
-![insl-swing](https://lh3.googleusercontent.com/vj9-oGgimgGeTOtIefl3To0O3ijxJKEFSB-HHlspg3-wixPrIj7KnGp8_iArC7DuJ3JzsQUTk5Su7bUQJjpzlTyJW_-MuRow24EqseK7YhpQrSFBzCP6QQ3Rf85SG4tIu2bUp0aXow=s200-p-k)
+![insl-swing](https://user-images.githubusercontent.com/23442063/133910317-7d82dbd0-5b06-4b24-998b-ba0ae7789c3a.png)
 
 **Figure 3: 2D I-String Insulator Geometry**
 
@@ -98,15 +98,15 @@ and segmented analysis will be negligible, as shown in Figure 4. However, when t
 wire loads approach that of the insulator loads, divergent scenarios such as
 those pictured in Figures 5 and 6 can occur.
 
-![insl-comparison-3](https://lh3.googleusercontent.com/S7-3PwaXCmkjyg3oAWIzzAmNGNWQuE_8Q8zZxt6UiSzTf-baBBONPoWC1R0uFPujR08s7VuiYGB70PJf_wF7CXxVfEjlxHbSzOm4zCOccF7O22B_SbVjN-ARxPLX5RBD9TmiaTdhUQ)
+![insl-comparison-3](https://user-images.githubusercontent.com/23442063/133910318-8e0749c2-9741-46a6-8b01-b3079fcf1961.png)
 
 **Figure 4: FE Insulator Comparison (Wire Loads $>>$ Insulator Loads)**
 
-![insl-comparison-1](https://lh3.googleusercontent.com/t3MnQUWWsd4gxTexNJP8WRRRaDaphuwivJzmOiRFnmPcNVlpMG6OC_Cy-wgsPXNsugljJJybY7_IdOXYW-ff-aibz5sYMzMf9ug_rBEeppKnkmIkEWiFu9hWBlr4ksvaWSBJEve21Q)
+![insl-comparison-1](https://user-images.githubusercontent.com/23442063/133910322-c83e1f9b-a316-4a51-923e-77afbabb3666.png)
 
 **Figure 5: FE Insulator Comparison (Wire Loads $ \propto $ Insulator Loads)**
 
-![insl-comparison-2](https://lh3.googleusercontent.com/yaSem8rPZvqjYe62oihstCKiLxDAT3n06H_UcrZrQfLlD1frio2R3ZHBq765ss2XHIr1zkBniQ7dnkVFE6lSSsBiKkL5GaiK2kGFtL40tlfIDc_O6sZr5YjKhs676lj3nkVpnTIlzA)
+![insl-comparison-2](https://user-images.githubusercontent.com/23442063/133910323-ae3ba5cf-0e07-4e25-86d7-f67601f9c55c.png)
 
 **Figure 6: FE Insulator Comparison (Uplift Wire Loads $ \propto $ Insulator Loads)**
 
@@ -130,7 +130,7 @@ The most common constrains posed to an I-string insulator are the horizontal con
 #### Horizontally Constrained Insulator
 The geometry for a simple horizontally constrained insulator is shown in Figure 5. Here, $L$ is the length of the insulator and $C$ is the horizontal clearance requirement to the object of interest. Depending on the material composing the horizontally constraining feature, this clearance value may vary. For example, clearances between wood and steel components generally differ. The value of $H$ may also be reduced to account for additional width that one might wish to account for in electrical clearance calculations, such as the width the the insulator suspension clamp or bundled conductor hardware.
 
-![horz-swing](https://lh3.googleusercontent.com/94gg6juiM1tWOk9eXbAjsgGlS9wK80AGYQaQQ8oe_Njh92HeqfXA1LEPJfdiAYFrUrBCkgmC6irY1JjjnSR3S0p8PpI6Gaa_UiFFSt5KRpHUC1er8HrIKYKAtqT07knBFBY4oxhzoA)
+![horz-swing](https://user-images.githubusercontent.com/23442063/133910327-715eac4a-ffd4-42cb-8a4d-4fd918a7950e.png)
 
 **Figure 5: Horizontally Constrained Swing Geometry**
 
@@ -153,7 +153,7 @@ The above scenario represents the allowable swing angle to a constraint to the r
 #### Vertically Constrained Insulator
 The geometry for a simple vertically constrained insulator is shown in Figure 6. Here, $C$ is the vertical clearance requirement to the object of interest.
 
-![vert-swing](https://lh3.googleusercontent.com/rzGY7CE0ZaRR0QwABbpkcc0I12DfGxa47kctE5MSrZmW-3FjKph3znMKJituBkkp9xtmJ5QGiHxyluEiDwn-wkCI4MhxpOSiHZ_DDIGRKtho5poAJUoTHHj2yhLqnxgiKYaaYQURtg)
+![vert-swing](https://user-images.githubusercontent.com/23442063/133910329-5d5ff032-84ed-42e6-b54a-7c23b0f4516f.png)
 
 **Figure 6: Vertically Constrained Swing Geometry**
 
