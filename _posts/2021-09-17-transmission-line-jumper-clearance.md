@@ -2,6 +2,7 @@
 layout: post
 title: Transmission Line Jumper Clearance and Minimum Line Angle Calculations
 categories: engineering transmission-line
+published: true
 ---
 
 In order to maintain electrical clearances within transmission line dead-end structures, jumper supports, such as horizontal posts or I-string insulators supported on davit arms, are occasionally required in order to restrain the jumper away from the structure. Most often, they are required for in-line dead-ends (structures with no line angle) or dead-ends with small line angles; whereas, structures with large line angles, such as that shown in Figure 1, do not require jumper supports since the length of the insulators alone provide an adequate offset distance from the structure.
