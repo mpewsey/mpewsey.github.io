@@ -9,7 +9,7 @@ In order to maintain electrical clearances within transmission line dead-end str
 
 This post will present equations to assist in evaluating the clearance between a jumper and pole with and without jumper supports. In addition, an equation to calculate the minimum line angle required in order to maintain electrical clearances to the pole for a structure without a jumper support will be presented, as this value can be beneficial in making general design decisions or specifying limits for structures within design standards.
 
-![structure-no-jumper-support](https://lh3.googleusercontent.com/LOpdcT-kLXAGsSl1MgOvMSXPbe20ePtbSAiIGTX2kDTsqSPxD-oqdmVhMSbZJ8eCRd7hqbBv0oepSsK5L3k-_VEBzFYyiFj7SMkdxKvhAvjYwC0q9EGocUMfx-GzJXVTRhIEjKVwOw=w2400)
+![structure-no-jumper-support](https://user-images.githubusercontent.com/23442063/133910107-3e4faf72-124a-4ac5-880f-aedefddafeb4.png)
 
 **Figure 1: Structure without Jumper Support**
 
@@ -24,7 +24,7 @@ A simplified plan geometry for a structure without a jumper support is shown in 
 * $P=$ the radius of the pole at the position of interest.
 * $\Delta=$ the line deflection angle.
 
-![no-jumper-support](https://lh3.googleusercontent.com/Fdob-ydGIO6cwIxqHylR5OcxcTdrCLTP1ZfKBp73CzO4CJ3H-_uschhp6gz5vWGsnYqiiMC1QTAkF2rLw0QA4heog3GVSEasAFSweGd2UvwMXzHEPBYf017iHdmfkdA3HVMSY9Jyjg=w2400)
+![no-jumper-support](https://user-images.githubusercontent.com/23442063/133910109-e7aa777b-8c7c-418b-8856-d588db978276.png)
 
 **Figure 2: Clearance to Structure with No Jumper Support**
 
@@ -43,7 +43,7 @@ $$ \Delta_{min} = 2 \text{asin}\bigg(\frac{P+C}{P+I}\bigg)$$
 
 A simplified plan geometry for a structure with a jumper support is shown in Figure 3. The variables shown are the same as the case of the geometry without a jumper support, except that the inclusion of the horizontal offset of the jumper support, $S$, has been incorporated.
 
-![jumper-support](https://lh3.googleusercontent.com/6L_pDnMP4krlPHuqfx6YvH-qaJJWhYfEJrOjyF4AINaA71C9Yujb2MJpN9ILdTQPNF22NF5oWLCiUN7bQLFMFOcuOTKJnLsm9IoN6xGCq9M6LhuHOJkGPGoAUXu8m_ej_tTklOPi2g=w2400)
+![jumper-support](https://user-images.githubusercontent.com/23442063/133910112-95cf209d-7651-44a1-86c0-8afcf31e2acc.png)
 
 **Figure 3: Clearance to Structure with Jumper Support**
 
