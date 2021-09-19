@@ -3,5 +3,5 @@ layout: default
 ---
 
 <h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }}{% for tag in page.categories %} <a href='{{ site.url }}/tags/{{ tag }}'>#{{ tag }}</a>{% endfor %}</p>
+<p>{{ page.date | date_to_string }}{% for tag in page.categories %} <a href='/tags/{{ tag }}'>#{{ tag }}</a>{% endfor %}</p>
 {{ content }}
