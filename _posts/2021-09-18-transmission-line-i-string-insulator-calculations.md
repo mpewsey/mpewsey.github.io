@@ -2,7 +2,7 @@
 layout: post
 title: Transmission Line I-String Insulator Swing Calculations
 categories: engineering transmission-line
-published: false
+published: true
 ---
 
 I-string insulators are insulators that attach to a structure at one end, via a pinned connection, and support a conductor at the other end, via a suspension clamp or other hardware. They typically consist of a series of porcelain or glass insulator bells (Figure 2) or a polymer rod (Figure 1). Their attachment to the structure via a pinned connection allows the insulator to freely swing with imbalances in wire tension loads. This flexibility helps reduce the lateral loads on transmission line structures due to temporary tension imbalances. In the event of a broken wire on a tangent or angle structure, the insulator is also capable of swinging until a new equilibrium is obtained, dissipating energy and reducing the tension that the structure must support under a broken wire scenario.
@@ -48,14 +48,14 @@ this value could theoretically be modified for each.
 
 While the above equation specifically accounts for the most common insulator
 calculations, it may also be of interest to note a more generic equation
-relating what might be called the fractional moments, $\mu$, to the swing angle:
+relating the length-normalized moments, $\mu$, to the swing angle:
 
 $$ \theta = \text{atan} \bigg(\frac{\mu_h}{\mu_v}\bigg) $$
 
 where
 
-* $ \mu_h = \sum(\text{Insulator Length Fraction} \times \text{Horizontal Load}) = $ horizontal fractional moment
-* $ \mu_v = \sum(\text{Insulator Length Fraction} \times \text{Vertical Load}) = $ vertical fractional moment
+* $ \mu_h = \frac{\sum M_h}{L} = \sum(\text{Insulator Length Fraction} \times \text{Horizontal Load}) = $ length-normalized horizontal moment
+* $ \mu_v = \frac{\sum M_v}{L} = \sum(\text{Insulator Length Fraction} \times \text{Vertical Load}) = $ length-normalized vertical moment
 
 
 ### 3D Insulator Swing
@@ -65,8 +65,7 @@ to have the majority of their swing occur within a single plane, in the case
 of imbalanced span loads or a dead-end insulator string, the evaluation of
 the wire attachment position in 3D may be of interest.
 
-To evaluate these deflections, we can simply decompose the 2D insulator swing equations
-into their deflection components in the x-y, y-z, and x-z planes:
+To evaluate these deflections, we can simply decompose the 2D insulator swing equations (Equation 3) into their deflection components in the x-y, y-z, and x-z planes:
 
 $$
 \begin{cases}
@@ -76,16 +75,15 @@ $$
 \end{cases}
 $$
 
-We also know that the total length of the insulator is related to the deflections
-by:
+We also know that the total length of the insulator is related to the deflections by:
 
 $$ L^2 = \Delta x^2 + \Delta y^2 + \Delta z^2 $$
 
-Combining the equation with the deflections developed previously, we get the wire attachment position vector, relative to the insulator attachment:
+Combining this equation with the deflections developed previously, we get the wire attachment position vector, relative to the insulator attachment:
 
 $$ \vec{\Delta} = \bigg(\frac{\text{<} \mu_x, \mu_y, \mu_z \text{>}}{\sqrt{\mu_x^2 + \mu_y^2 + \mu_z^2}} \bigg) L = \vec{\mu_u} L $$
 
-Here, $ \vec{\mu_u} $ is the unit vector of the fractional moment.
+Here, $ \vec{\mu_u} $ is the unit vector of the length-normalized moment.
 
 
 ### Segmented Insulator Analysis
@@ -123,14 +121,14 @@ similar to what has been shown for the rigid insulator previously.
 
 The allowable swing angles are typically defined as the minimum (angle to the left) and maximum (angle to the right) values in which an insulator of a given length still maintains structural clearances. Rather than the exact swing angles, which were developed previously, these values can be calculated generally for a family of structures.
 
-One way of determining the allowable swing angles of a structure would be to draw the structure to scale in an CAD program and to rotate the insulator and wire clearance circle until it touches some part of the structure. This method is excellent for visualization but comes with the downfall that CAD programs typically do not have the snaps necessary to acquire an exact swing angle. Rather, the eye-balled intersection could result in swing angles around a degree of two of the actual value. In addition, this method takes time to draw the required section of the structure to scale. For calculating the swings for a large number of structures, it may, therefore, be more beneficial to use an analytic approach that applies the value for various common directional constraints.
+One way of determining the allowable swing angles of a structure would be to draw the structure to scale in an CAD program, then to rotate the insulator and wire clearance circle until it touches some part of the structure. This method is excellent for visualization but comes with the downfall that CAD programs typically do not have the snaps necessary to acquire an exact swing angle. Rather, the eye-balled intersection could result in swing angles around a degree of two of the actual value. In addition, this method takes time to draw the required section of the structure to scale. For calculating the swings for a large number of structures, it may, therefore, be more beneficial to use an analytic approach that applies the value for various common directional constraints.
 
-The most common constrains posed to an I-string insulator are the horizontal constraint, e.g. to the pole or tower body, and the vertical constrain, e.g. to the supporting tower crossarm or davit arm. The following subsections will present solutions for these two common methods. The controlling value of the the horizontal and vertical constraint should be used for check comparisons.
+The most common constraints posed to an I-string insulator are to poles or tower bodies (horizontal constraints) and to their supporting tower crossarms or davit arms (vertical constraints). The following subsections will present solutions for these two common constraints. The controlling value of the the horizontal and vertical constraints should be used for swing check comparisons.
 
 #### Horizontally Constrained Insulator
-The geometry for a simple horizontally constrained insulator is shown in Figure 5. Here, $L$ is the length of the insulator and $C$ is the horizontal clearance requirement to the object of interest. Depending on the material composing the horizontally constraining feature, this clearance value may vary. For example, clearances between wood and steel components generally differ. The value of $H$ may also be reduced to account for additional width that one might wish to account for in electrical clearance calculations, such as the width the the insulator suspension clamp or bundled conductor hardware.
+The geometry for a simple horizontally constrained insulator is shown in Figure 5. Here, $L$ is the length of the insulator and $C$ is the horizontal clearance requirement to the object of interest. Depending on the material composing the horizontally constraining feature, this clearance value may vary. For example, clearances between wood and steel components generally differ. The value of $H$ may also be reduced to account for any additional width that one might wish to account for in electrical clearance calculations, such as the width of the insulator suspension clamp or bundled conductor hardware.
 
-![horz-swing](https://user-images.githubusercontent.com/23442063/133910327-715eac4a-ffd4-42cb-8a4d-4fd918a7950e.png)
+![horz-swing](https://user-images.githubusercontent.com/23442063/133910329-5d5ff032-84ed-42e6-b54a-7c23b0f4516f.png)
 
 **Figure 5: Horizontally Constrained Swing Geometry**
 
@@ -153,7 +151,7 @@ The above scenario represents the allowable swing angle to a constraint to the r
 #### Vertically Constrained Insulator
 The geometry for a simple vertically constrained insulator is shown in Figure 6. Here, $C$ is the vertical clearance requirement to the object of interest.
 
-![vert-swing](https://user-images.githubusercontent.com/23442063/133910329-5d5ff032-84ed-42e6-b54a-7c23b0f4516f.png)
+![vert-swing](https://user-images.githubusercontent.com/23442063/133910327-715eac4a-ffd4-42cb-8a4d-4fd918a7950e.png)
 
 **Figure 6: Vertically Constrained Swing Geometry**
 
@@ -173,8 +171,8 @@ $$
 
 Similar to the horizontally constrained case, for swing angles to the left, simply calculate the angle to the right and apply a negative sign.
 
-### Conclusion
-Using the previously presented equations, the minimum and maximum swing angles can be calculated as $ \theta_{min} = \max(\theta_{\text{horz,left}}, \theta_{\text{vert,left}}) $ and $ \theta_{max} = \min(\theta_{\text{horz,right}}, \theta_{\text{vert,right}}) $. The actual swing angle due to loading $\theta$ can then be checked that $ \theta_{min} \leq \theta \leq \theta_{max} $ to verify that adequate electrical clearance has been maintained.
+### Checking Constraints
+Using the previously presented equations, the minimum and maximum swing angles can be calculated based on the structure constraints as $ \theta_{min} = \max(\theta_{\text{horz,left}}, \theta_{\text{vert,left}}) $ and $ \theta_{max} = \min(\theta_{\text{horz,right}}, \theta_{\text{vert,right}}) $. If the actual swing angle due to loading, $\theta$, satisfies the inequality $ \theta_{min} \leq \theta \leq \theta_{max} $, then we can conclude that adequate electrical clearances are maintained for the associated loading condition.
 
 ### Attachments
 
