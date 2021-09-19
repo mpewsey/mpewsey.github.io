@@ -9,7 +9,7 @@ A V-string insulator consist of two insulator strings or rods that are attached,
 
 While insulator swing calculations are generally not necessary for V-String insulators unless the longitudinal swing under a loading scenario is of interest, an allowable load angle calculations is generally performed to ensure that no leg of the insulator will go into compression, since the insulator bells and rods are generally not designed to support significant compressive loads, if any. This post will develop a variety of equations necessary for calculating the geometry of a V-string insulator, as well as evaluating the allowable load angles and internal loads for strength calculations. The geometry of interest for the subsequent development is shown in Figure 1, which displays two insulators of length $L_1$ and $L_2$ attached to two structure attachments at separations $\Delta x$ and $\Delta z$. In addition, load $P$ is some wire resultant load applied at angle $\phi$ from vertical.
 
-![v-string](https://lh3.googleusercontent.com/uYY2_dX6cxNCAFNQom4hxrSz96FByKEsHR_-OfM0xsTzmhlDzshnRiHHjigeDYNc-A_uWiNRBiKl-l2BgFr6ZbL0jIhGsrrIdkZQ41pQaGbJqOyIImWRHKu4eVE8xi3cAQfSWM7seQ=w2400)
+![v-string](https://user-images.githubusercontent.com/23442063/133932936-39502247-37f4-4c32-90f8-6eec619d0ff9.png)
 
 **Figure 1: V-String Insulator Geometry**
 
