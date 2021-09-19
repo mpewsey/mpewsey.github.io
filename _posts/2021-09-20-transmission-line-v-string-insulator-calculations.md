@@ -2,7 +2,7 @@
 layout: post
 title: Transmission Line V-String Insulator Calculations
 categories: engineering transmission-line
-published: false
+published: true
 ---
 
 A V-string insulator consist of two insulator strings or rods that are attached, at their tops, to two separate points of a structure and, at their bottoms, provide a shared wire attachment. The elevation view looks like a letter "V", hence the name. The main advantage of this insulator type is that the configuration of the V-string, unlike an I-string, restricts transverse (into the structure) swings/deflections of the wire, allowing horizontal framing within the structure to potentially be more compact and eliminating the insulator swing component from wire blowout calculations, potentially reducing the required right-of-way width. In addition, the V-strings are still allowed to swing longitudinally (into the adjacent spans), allowing the same tension imbalance and broken wire adjustments that an I-string insulator affords.

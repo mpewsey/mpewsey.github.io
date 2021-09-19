@@ -3,3 +3,4 @@ _site
 .sass-cache
 *.gem
 .jekyll-cache
+.ipynb_checkpoints
