@@ -6,14 +6,14 @@ published: true
 ---
 In the United States, the magnetic and electric fields of transmission lines are not nationally regulated. However, some states have their own set of regulations as to their maximum values within the right-of-way and/or at the edge of the right-of-way. For example, in the state of <a href='https://www.flrules.org/gateway/readFile.asp?sid=0&tid=0&cno=62-814&caid=1028702&type=4&file=62-814.doc'>Florida</a>, for new 500kV or greater transmission lines, the maximum electric and magnetic fields at the edge of the right-of-way, 1 meter above ground, are 5.5 kV/m and 250 mG, respectively. In addition, the maximum electric field within the right-of-way is 15 kV/m at 1 meter above the ground. To provide a clearer picture of what goes into these calculations, this post breaks down the steps necessary to calculate the magnetic and electric fields of a transmission line using 2D calculations.
 
+<!--excerpt-->
+
 ### Magnetic Field Calculations
 
 Magnetic field calculations require the following input parameters:
 
 * The position of each phase ($ x_k, y_k $). Here, $ y_k $ is the height of the phase above ground assuming level terrain. If a phase consists of bundled conductor, this position is usually taken to be the centroid of the bundle. For right-of-way calculations, the value of $ y_k $ should account for the wire sag, as the minimum height will yield the worst case results near the ground.
 * The RMS current passing through each phase, $I$, along with its phase angle, $\phi$.
-
-<!--excerpt-->
 
 #### Step 1: Decompose the Currents into Real and Reactive Components
 For magnetic field calculations, the RMS current for each phase must be decomposed to its real and reactive (imaginary) parts based on its phase angle. This is done by using the equation:
@@ -190,7 +190,7 @@ emf.plot_geometry();
 ```
 
 
-    <IPython.core.display.Javascript object>
+    
 
 
 
@@ -233,7 +233,7 @@ ax.legend();
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -241,7 +241,7 @@ ax.legend();
 
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -292,7 +292,7 @@ ax.legend();
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -300,7 +300,7 @@ ax.legend();
 
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -325,7 +325,7 @@ emf.plot_space_potential_profiles(
 ```
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
@@ -333,7 +333,7 @@ emf.plot_space_potential_profiles(
 
 
 
-    <IPython.core.display.Javascript object>
+
 
 
 
