@@ -3,7 +3,7 @@ Convert notebooks with:
 pipenv run python convert_notebooks.py
 """
 
-POSTS_DIRECTORY = "_posts"
+POSTS_DIRECTORY = "_posts/notebooks"
 NOTEBOOKS_DIRECTORY = "_notebooks"
 ASSETS_DIRECTORY = "assets/notebooks"
 REPLACEMENT_STRINGS = [("<IPython.core.display.Javascript object>", "")]
@@ -20,6 +20,7 @@ from subprocess import check_output
 def convert_notebooks():
     notebooks = notebook_paths()
     create_assets_path()
+    create_posts_path()
 
     if not FORCE_BUILD:
         notebooks = [x for x in notebooks if notebook_changed(x)]
@@ -76,6 +77,11 @@ def notebook_paths():
 def create_assets_path():
     if not os.path.exists(ASSETS_DIRECTORY):
         os.makedirs(ASSETS_DIRECTORY)
+
+
+def create_posts_path():
+    if not os.path.exists(POSTS_DIRECTORY):
+        os.makedirs(POSTS_DIRECTORY)
 
 
 def convert_to_markdown(notebook_path: str):
