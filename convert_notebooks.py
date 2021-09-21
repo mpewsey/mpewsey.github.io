@@ -36,7 +36,7 @@ def notebook_changed(notebook_path: str) -> bool:
 
     with open(path, 'rt') as fh:
         hash2 = fh.read()
-        return hash1 == hash2
+        return hash1 != hash2
 
 
 def compute_hash(notebook_path: str) -> str:
