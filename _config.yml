@@ -2,7 +2,7 @@ title: Matt Pewsey
 remote_theme: pages-themes/dinky@v0.2.0
 markdown: kramdown
 excerpt_separator: <!--excerpt-->
-exclude: ['README.md']
+exclude: ['README.md', '*.py', '*.sha256', 'Pipfile', 'Pipfile.lock']
 permalink: /:year/:month/:day/:title.html
 plugins:
 - jekyll-remote-theme

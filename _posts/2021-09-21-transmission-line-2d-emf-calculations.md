@@ -233,7 +233,7 @@ ax.legend();
 ```
 
 
-
+    
 
 
 
@@ -241,7 +241,7 @@ ax.legend();
 
 
 
-
+    
 
 
 
@@ -292,7 +292,7 @@ ax.legend();
 ```
 
 
-
+    
 
 
 
@@ -300,7 +300,7 @@ ax.legend();
 
 
 
-
+    
 
 
 
@@ -325,7 +325,7 @@ emf.plot_space_potential_profiles(
 ```
 
 
-
+    
 
 
 
@@ -333,7 +333,7 @@ emf.plot_space_potential_profiles(
 
 
 
-
+    
 
 
 
