@@ -2,4 +2,4 @@
 layout: default
 ---
 
-<h1>In Progress</h1>
+<h1>About</h1>
