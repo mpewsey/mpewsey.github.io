@@ -35,7 +35,7 @@ def convert_notebooks(force_build = False):
         move_assets(notebook_path)
         write_hash_file(notebook_path)
 
-    print("*** Converted {} notebooks ***".format(len(notebooks)))
+    print(f"*** Converted {len(notebooks)} notebooks ***")
 
 
 def notebook_changed(notebook_path: str) -> bool:
