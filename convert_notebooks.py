@@ -1,28 +1,32 @@
 """
 Convert notebooks with:
 pipenv run python convert_notebooks.py
+
+Ignore hash files and force conversion of all notebooks:
+pipenv run python convert_notebooks.py --force-build
 """
 
 POSTS_DIRECTORY = "_posts/notebooks"
 NOTEBOOKS_DIRECTORY = "_notebooks"
 ASSETS_DIRECTORY = "assets/notebooks"
 REPLACEMENT_STRINGS = [("<IPython.core.display.Javascript object>", "")]
-FORCE_BUILD = False
 
 
 import os
+import sys
+import getopt
 import shutil
 import hashlib
 from glob import glob
 from subprocess import check_output
 
 
-def convert_notebooks():
+def convert_notebooks(force_build = False):
     notebooks = notebook_paths()
     create_assets_path()
     create_posts_path()
 
-    if not FORCE_BUILD:
+    if not force_build:
         notebooks = [x for x in notebooks if notebook_changed(x)]
 
     for notebook_path in notebooks:
@@ -141,8 +145,23 @@ def update_markdown_paths(notebook_path: str, contents: str) -> str:
     path = assets_path(notebook_path)
     directory = os.path.basename(path)
     dest = os.path.join("{{ site.url }}", ASSETS_DIRECTORY, directory)
+
+    if not dest.endswith("/"):
+        dest = dest + "/"
+
     return contents.replace("![png](", "![png](" + dest)
 
 
+def main():
+    options, _ = getopt.getopt(sys.argv[1:], "", ["force-build"])
+    force_build = False
+
+    for (option, _) in options:
+        if option == "--force-build":
+            force_build = True
+
+    convert_notebooks(force_build)
+
+
 if __name__ == "__main__":
-    convert_notebooks()
+    main()
