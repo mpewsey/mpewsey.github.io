@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Statistical Evaluation of PLS-CADD Batch Thermal Calculator Conductor Temperature Results
-categories: engineering transmission-line presentation pls-cadd
+categories: engineering transmission-line presentation pls-cadd data-science
 published: true
 ---
 
