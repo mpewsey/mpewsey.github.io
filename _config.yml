@@ -5,6 +5,7 @@ markdown: kramdown
 excerpt_separator: <!--excerpt-->
 exclude: ['README.md', '*.py', '*.sha256', 'Pipfile', 'Pipfile.lock']
 permalink: /:year/:month/:day/:title.html
+future: false
 plugins:
 - jekyll-remote-theme
 - jekyll-feed
