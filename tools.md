@@ -8,7 +8,8 @@ layout: default
 
 * [XSect - Cross Sectional Property Calculations](https://github.com/mpewsey/xsect)
 * [CivPy - Civil Engineering Tools and Algorithms](https://github.com/mpewsey/civpy)
-
+* [Block Shear Length Calculation Spreadsheet](https://docs.google.com/spreadsheets/d/1jdOamo0YzTk33vYM6bE0Xid1It7tLSEjTe99WweQ2-M/edit?usp=sharing)
+* [Equivalent Number of Bolts for Tension Member with Staggered Bolt Chain Spreadsheet](https://docs.google.com/spreadsheets/d/1d7dc8T0IlulbBMIf2ZLVICGpPFjc1OTMy9bnig6wXXo/edit?usp=sharing)
 
 ## Transmission Line Engineering
 
