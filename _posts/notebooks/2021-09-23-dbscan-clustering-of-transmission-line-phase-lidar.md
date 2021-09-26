@@ -32,8 +32,7 @@ The following loads the phase LiDAR points, which were generated synthetically f
 
 ```python
 with open("points.csv", "rt") as fh:
-    points = np.loadtxt(fh, delimiter = ",")
-    points = np.asarray(points, dtype = "float")
+    points = np.loadtxt(fh, delimiter = ",", dtype = 'float')
 
 fig = plt.figure()
 ax = fig.add_subplot(projection = "3d")
