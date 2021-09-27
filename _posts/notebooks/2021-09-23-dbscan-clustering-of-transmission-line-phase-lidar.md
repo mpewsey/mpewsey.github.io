@@ -31,8 +31,7 @@ The following loads the phase LiDAR points, which were generated synthetically f
 
 
 ```python
-with open("points.csv", "rt") as fh:
-    points = np.loadtxt(fh, delimiter = ",", dtype = 'float')
+points = np.load("points.npy")
 
 fig = plt.figure()
 ax = fig.add_subplot(projection = "3d")
@@ -79,7 +78,7 @@ The following plots the LiDAR points with colors based on their identified clust
 
 ```python
 cmap = plt.cm.get_cmap("viridis")
-bounds = np.linspace(-0.5, labels[-1] + 0.5, len(labels) + 1)
+bounds = np.linspace(labels[0] - 0.5, labels[-1] + 0.5, len(labels) + 1)
 norm = colors.BoundaryNorm(bounds, cmap.N)
 
 fig = plt.figure()
