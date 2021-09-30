@@ -6,3 +6,10 @@
 footer a {
   display: inline;
 }
+
+@media print, screen and (max-width: 480px) {
+  body img {
+    max-width: 100%;
+    max-height: auto;
+  }
+}
