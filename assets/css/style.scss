@@ -6,27 +6,3 @@
 footer a {
   display: inline;
 }
-
-@media print, screen and (max-width: 720px) {
-  body img {
-    max-width: 100%;
-    max-height: auto;
-  }
-
-  body iframe {
-    max-width: 100%;
-    max-height: auto;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  body img {
-    max-width: 100%;
-    max-height: auto;
-  }
-
-  body iframe {
-    max-width: 100%;
-    max-height: auto;
-  }
-}
