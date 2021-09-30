@@ -2,6 +2,7 @@
 title: Transmission Line Structure LiDAR Comparison
 categories: transmission-line data-science python
 published: true
+featured_image: https://user-images.githubusercontent.com/23442063/135368478-3468ecae-48e9-4bd2-9732-bdef8868c996.png
 ---
 Automated methods for comparing transmission line structure LiDAR open the way for a number of opportunities in the identification of trouble areas for designers to focus on. This post will explore an approach for separating structure point cloud clusters, pairing structure point clusters between data sets taken at different times, and comparing cluster pairs using the Hausdorrf distance to determine whether they significantly differ.
 
