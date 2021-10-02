@@ -7,6 +7,8 @@ featured_image: https://user-images.githubusercontent.com/23442063/135720966-a51
 
 There are a number of ways to implement combatant AI in RPG battle games such as Dragon Quest or Pokemon. However, one simple approach is to develop a list of probablities for all actions that a combatant can take, then draw a random action based on these probabilities. In some games, such probability lists may have been explicitly specified by designers and remained static regardless of the actual state of the battle. While in other games, more advanced logic, perhaps even incorporating combo attacks over the course of turns, may have been employed. Whatever the approach, the number of unique takes on battle AI throughout games is wide and varied. Ultimately, the implementation perhaps comes down to what features the game developers felt was most important for the gameplay, as well as what was technically and economically feasible at the time.
 
+<!--excerpt-->
+
 Personally, I feel that some important features that should be included in battle AI are:
 
 * The AI should change based on the game difficulty. While this should include specific difficulty modes such as Easy, Normal, or Hard, it should also include considerations of the diffulty curve over the progression of the game. For example, earlier enemies should perhaps be easier than later enemies since the player is still learning the game. Moreover, boss enemies might present large difficulty spikes in order to keep the player from getting too comfortable.
@@ -15,7 +17,6 @@ Personally, I feel that some important features that should be included in battl
 
 This post presents an approach to creating battle AI that aims to incorporate  these features using weights, which are used for calculating the probabilities for action selections.
 
-<!--excerpt-->
 
 ### Action Probablity Vector
 
