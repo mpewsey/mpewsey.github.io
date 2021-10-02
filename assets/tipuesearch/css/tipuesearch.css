@@ -52,11 +52,13 @@ http://www.tipue.com/search
 {
      width: 24px;
      height: 24px;
+     border: 0px;
 }
 .tipue_search_left
 {
      float: left;
-     padding: 15px 9px 0 0;
+     /* padding: 15px 9px 0 0; */
+     padding: 0 9px 0 0;
 }
 .tipue_search_right
 {
@@ -203,7 +205,7 @@ http://www.tipue.com/search
 }
 .tipue_search_spinner > div
 {
-     background-color: #e3e3e3;
+     /* background-color: #e3e3e3; */
      height: 100%;
      width: 2px;
      display: inline-block;
