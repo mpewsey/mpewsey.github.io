@@ -1,12 +1,25 @@
 ---
 title: An Approach to Weight-Based Battle AI
-categories: game-design artificial-intelligence
+categories: game-design data-science
 published: true
+featured_image: https://user-images.githubusercontent.com/23442063/135720966-a5125dc6-aa76-44cf-b613-9adb5c7813c7.png
 ---
+
+There are a number of ways to implement combatant AI in RPG battle games such as Dragon Quest or Pokemon. However, one simple approach is to develop a list of probablities for all actions that a combatant can take, then draw a random action based on these probabilities. In some games, such probability lists may have been explicitly specified by designers and remained static regardless of the actual state of the battle. While in other games, more advanced logic, perhaps even incorporating combo attacks over the course of turns, may have been employed. Whatever the approach, the number of unique takes on battle AI throughout games is wide and varied. Ultimately, the implementation perhaps comes down to what features the game developers felt was most important for the gameplay, as well as what was technically and economically feasible at the time.
+
+Personally, I feel that some important features that should be included in battle AI are:
+
+* The AI should change based on the game difficulty. While this should include specific difficulty modes such as Easy, Normal, or Hard, it should also include considerations of the diffulty curve over the progression of the game. For example, earlier enemies should perhaps be easier than later enemies since the player is still learning the game. Moreover, boss enemies might present large difficulty spikes in order to keep the player from getting too comfortable.
+* The AI should adapt to the current battle scenario. Attacks that exploit an enemy's weakness should be used more frequently, and healing should be performed when an ally's health becomes lower.
+* Different AI should employ different strategies, such as being more passive or more aggressive. This creates more contrast in enemy types and allows the implentation of more class based gameplay.
+
+This post presents an approach to creating battle AI that aims to incorporate  these features using weights, which are used for calculating the probabilities for action selections.
+
+<!--excerpt-->
 
 ### Action Probablity Vector
 
-For a set of actions, we will define the probablity vector for selecting any given action as
+For this approach, we will define the probability vector for selecting a set of actions as
 
 $$ \vec{p} = \text{softmax} ( w_i w_s w_c w_m ) $$
 
@@ -17,15 +30,20 @@ where
 * $ w_c = $ the weight for the action code of an element.
 * $ w_m = $ an optional weight for an element that may be manually specified by the designer.
 
-Here, the [softmax](https://en.wikipedia.org/wiki/Softmax_function) function simply provides a way of exaggerating the differences in the weights between actions.
+These weight factors will be described in more detail in the sections to follow.
 
-With this vector, a random action can be selected by drawing a random number between 0 and 1, then finding the first element that is both greater than zero and greater than or equal to the random number.
+Here, the [softmax](https://en.wikipedia.org/wiki/Softmax_function) function simply provides a way of exaggerating the differences in the weights between actions by scaling them exponentially.
+
+With this vector, a random action can be selected by drawing a random number between 0 and 1, then finding the first element in the cumulative probablity vector that is both greater than zero and greater than or equal to the random number, as shown in Figure 1.
+
+![Action Cumulative Probablity Plot](https://user-images.githubusercontent.com/23442063/135720966-a5125dc6-aa76-44cf-b613-9adb5c7813c7.png)
+**Figure 1: Cumulative Probablity Plot for a Set of Actions**
 
 ### Action Code Weight ($ w_c $)
 
-The action code weight will likely be dependent on (1) the actor, (2) the possible targets, and (3) the action itself. In general, when calculating weights for action codes, you will want to identify one or more parameters that can be normalized based on these sources. For example, estimated hit point damage to a target can be normalized by the target's current hit points. This normalized parameter can then be used to linearly interpolate ([Lerp](https://en.wikipedia.org/wiki/Linear_interpolation)) between two weight bounds, $w_{min}$ and $w_{max}$, to produce values for $ w_c $.
+The action code weight is a factor for adapting the AI to the current battle scenario based on the intent and estimated significance of the action. The weight will likely be dependent on (1) the actor, (2) the possible targets, and (3) the action parameters. In general, when calculating weights for action codes, you will want to identify one or more parameters that can be normalized based on these sources. For example, estimated hit point damage to a target can be normalized by the target's current hit points. This normalized parameter can then be used to linearly interpolate ([Lerp](https://en.wikipedia.org/wiki/Linear_interpolation)) between two weight bounds, $w_{min}$ and $w_{max}$, to produce values for $ w_c $.
 
-If multiple normalized parameters are valid for a code, the interpolated weights may be multiplied together to produce $w_c$. However, $w_{min}$ and $w_{max}$ for each interpolation must be modified to ensure that they reside within the same bounds used by all other codes. Otherwise, the code would inevitably either be more highly favored or disfavored than the other codes. For the instance of two equally weighted parameters, $w_{min}^{0.5}$ and $w_{min}^{0.5}$ may be used for the weight bounds since the exponents, when the terms are multiplied, sum to 1. In other words, $w^{0.5} w^{0.5} = w^1$. Of course, the normalized parameters need not be both of equal importance. For example, another valid weight for an uneven weighting of the normalized parameters would be $w^{0.25} w^{0.75} = w^{1}$.
+If multiple normalized parameters are valid for a code, the interpolated weights may be multiplied together to produce $w_c$. However, $w_{min}$ and $w_{max}$ for each interpolation must be modified to ensure that they reside within the same bounds used by all other codes when multiplied. Otherwise, the code would inevitably either be more highly favored or disfavored than the other codes. For the instance of two equally weighted parameters, $w_{min}^{0.5}$ and $w_{min}^{0.5}$ may be used for the weight bounds since the exponents, when the terms are multiplied, sum to 1. In other words, $w^{0.5} w^{0.5} = w^1$. Of course, the normalized parameters need not be both of equal importance. For example, another valid weight for an uneven weighting of the normalized parameters would be $w^{0.25} w^{0.75} = w^{1}$.
 
 Based on the need to calculate new bounds for multiple normalized parameters, it is convenient to take $w_{min}$ to be 1, since no additional calculations for the minimum bound are then required. A suitable $w_{max}$ will have to be determined based on the specific scenario; however, I feel that a value of about 3 is a good place to start.
 
@@ -57,7 +75,7 @@ and
 
 $$ s_j = 1 - \frac{\text{Target Hit Points}}{\text{Target Max Hit Points}} $$
 
-The first parameter reduces the waste of a better item or more powerful spell when a lesser item or spell could be used. The second parameter increases the likelihood that a target receives healing as its health decreases relative to its maximum value.
+The first parameter reduces the waste of a better item or more powerful spell when a lesser item or spell could be used to almost equal effect. The second parameter increases the likelihood that a target receives healing as its health decreases relative to its maximum value.
 
 For equal parameter weights, the weight for the j-th target is
 
@@ -110,3 +128,7 @@ $$ w_i = \text{Lerp}(10^{-7}, 1 ,t) $$
 ### Manually Specified Weight ($w_m$)
 
 The manually specified weight provides an entry point by which special behavior might be incorporated into a specific AI. Generally, it should simply be taken as 1. However, larger values will increase the chance that a particular action is selected, while smaller values will decrease it.
+
+### Final Remarks
+
+The above presents a weight-based approach to selecting AI battle actions. In addition to actions, other parameters, such as the item to use and target to which the action will be applied, will also need to be selected. Fortunately, the approach to selecting these parameters is almost identical to that of selecting a battle action. However, instead the target or item action weights should be developed into their own probablity vectors (rather than reducing to the maximum value), which are then used to draw a random value.
