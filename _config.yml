@@ -9,3 +9,4 @@ future: false
 plugins:
 - jekyll-remote-theme
 - jekyll-feed
+- jekyll-sitemap
