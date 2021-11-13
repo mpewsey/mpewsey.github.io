@@ -9,7 +9,7 @@ Structural software, such as PLS-Tower, sometimes provides a field for the numbe
 
 This post presents the equations for calculating the equivalent number of bolts incorporating the $ s^2 / 4g $ value. In addition, to reduce the number of failure paths that must be considered for complex bolt patterns, an equation for the critical pitch spacing, beyond which a staggered tensile failure path will not occur, is presented.
 
-![staggered-tensile-failur-path](https://user-images.githubusercontent.com/23442063/134752550-52d07d4f-13f4-4082-a8dc-6f7bf276126b.png)
+![Staggered Tensile Failure Path](https://user-images.githubusercontent.com/23442063/141645686-b517fe60-62ef-4c7e-b176-08eeab2c3498.png)
 
 **Figure 1: Staggered Tensile Failure Path**
 <!--excerpt-->
