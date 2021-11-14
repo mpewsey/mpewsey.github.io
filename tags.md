@@ -4,6 +4,8 @@ layout: default
 
 <h1>Tags</h1>
 
-{% for tag in site.categories %}
-  <div><a href='{{ site.url }}/tags/{{ tag | first }}'>#{{ tag | first }}</a></div>
+{% assign sorted_tags = site.categories | sort %}
+
+{% for tag in sorted_tags %}
+  <div><a href='/tags/{{ tag[0] }}'>#{{ tag[0] }} ({{ tag[1].size }})</a></div>
 {% endfor %}
