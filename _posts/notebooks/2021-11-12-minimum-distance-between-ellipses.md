@@ -78,13 +78,13 @@ t_2
 \end{bmatrix}
 $$
 
-For ellipses whose centers are not contained within each other, reasonable intial values for $ t_1 $ and $ t_2 $ are
+For ellipses whose centers are not contained within each other, reasonable initial values for $ t_1 $ and $ t_2 $ are
 
 $$ t_1 = \text{atan2}\bigg(\frac{y_2 - y_1}{x_2 - x_1}\bigg) - \phi_1 $$
 
 $$ t_2 = \text{atan2}\bigg(\frac{y_1 - y_2}{x_1 - x_2}\bigg) - \phi_2 $$
 
-For ellipses whose centers are contained within each other, however, this value is not adequate to prevent the solution from converging to a maxima or other local solution. Generating polygon vertices around the ellipses and using the angles corresponding to the minimum distance between the ellipse vertices resolves this issue, though this solution may be somewhat ineligant.
+For ellipses whose centers are contained within each other, however, this value is not adequate to prevent the solution from converging to a maxima or other local solution. Generating polygon vertices around the ellipses and using the angles corresponding to the minimum distance between the ellipse vertices resolves this issue, though this solution may be somewhat inelegant.
 
 ### Import Statements
 
@@ -100,7 +100,7 @@ import matplotlib.pyplot as plt
 
 ### Ellipse Class Implementation
 
-An ellipse class implmenting the developed equations into the `find_distance` method is shown below.
+An ellipse class implementing the developed equations into the `find_distance` method is shown below.
 
 
 ```python
@@ -232,10 +232,10 @@ ellipses = [
 ]
 
 solutions = [ellipse.find_distance(x) for x in ellipses]
-print(f"Method Sucessful: {np.all([x['success'] for x in solutions])}")
+print(f"Method Successful: {np.all([x['success'] for x in solutions])}")
 ```
 
-    Method Sucessful: True
+    Method Successful: True
 
 
 #### Method Convergence

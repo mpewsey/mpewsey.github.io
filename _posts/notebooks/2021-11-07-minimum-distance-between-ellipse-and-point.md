@@ -60,7 +60,7 @@ For [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method), iteratio
 
 $$ t_{n+1} = t_n - \frac{\frac{d D^2}{d t}}{\frac{d D^2}{d t^2}} $$
 
-For points located outside of the ellipse, a reasonable starting value is the same as that of the gradient descent method. For points inside of the ellipse, however, this value is not adequate to prevent the solution from converging to a maxima or other local solution. Generating polygon vertices around the ellipse and using the angle corresponding to the minimum distance between the point coordinate and vertices resolves this issue, though this solution may be somewhat ineligant.
+For points located outside of the ellipse, a reasonable starting value is the same as that of the gradient descent method. For points inside of the ellipse, however, this value is not adequate to prevent the solution from converging to a maxima or other local solution. Generating polygon vertices around the ellipse and using the angle corresponding to the minimum distance between the point coordinate and vertices resolves this issue, though this solution may be somewhat inelegant.
 
 ### Import Statements
 
@@ -258,7 +258,7 @@ for x in points:
 
 #### Method Convergence
 
-Plots of the method convergences are shown below. As seen in the plots, Method 1 (gradient descent) converges very slowly, exceeding 100 iterations for many solutions. On the other hand, Method 1 (Newton's method) converges rapidly, with a maximum of 4 iterations. This difference in efficiency is an obvious eplaination of the time differences between the algorithms, seen in the previous section.
+Plots of the method convergences are shown below. As seen in the plots, Method 1 (gradient descent) converges very slowly, exceeding 100 iterations for many solutions. On the other hand, Method 1 (Newton's method) converges rapidly, with a maximum of 4 iterations. This difference in efficiency is an obvious explanation of the time differences between the algorithms, seen in the previous section.
 
 In addition, the gradient descent method does not show constant decreases in error across all solutions, but rather some samples show increases, perhaps due to overshooting solutions or due to poor initial values.
 
