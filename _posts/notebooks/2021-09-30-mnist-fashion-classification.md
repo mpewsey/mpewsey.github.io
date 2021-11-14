@@ -34,7 +34,7 @@ from sklearn.manifold import SpectralEmbedding
 
 ### Load and Plot Sample Data
 
-The following code loads the MNIST fasion data set and plots a sample of 9 garments.
+The following code loads the MNIST fashion data set and plots a sample of 9 garments.
 
 The MNIST dataset is already partitioned into separate training and validation images and labels. The training images and labels will be used to train the models, while the validation images will be used to determine the models accuracy and ensure that the model has not been overfit.
 
