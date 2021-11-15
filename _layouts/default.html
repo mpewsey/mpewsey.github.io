@@ -38,8 +38,18 @@
 
       <footer>
         <h3><a href="/tags">Tags</a></h3>
-        {% for tag in site.categories limit: 8 %}
-          <div><a href='/tags/{{ tag[0] }}'>#{{ tag[0] }} ({{ tag[1].size }})</a></div>
+
+        {% capture tags %}
+          {% for tag in site.categories %}
+            {{ tag[1].size | plus: 100000 }},{{ tag[0] }},{{ tag[1].size }}
+          {% endfor %}
+        {% endcapture %}
+
+        {% assign sorted_tags = tags | split: ' ' | sort %}
+
+        {% for tag in sorted_tags reversed limit: 8 %}
+          {% assign tag_items = tag | split: ',' %}
+          <div><a href='/tags/{{ tag_items[1] }}'>#{{ tag_items[1] }} ({{ tag_items[2] }})</a></div>
         {% endfor %}
 
         <h3></h3>
