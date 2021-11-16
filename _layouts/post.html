@@ -10,9 +10,11 @@ layout: default
 
 <h3>More Posts</h3>
 
+<ul>
 {% if page.previous.url %}
-  <div>&#x2296; <a href="{{page.previous.url}}">{{page.previous.title}}</a></div>
+  <li>&#x2296; <a href="{{page.previous.url}}">{{page.previous.title}}</a></li>
 {% endif %}
 {% if page.next.url %}
-  <div>&#x2295; <a href="{{page.next.url}}">{{page.next.title}}</a></div>
+  <li>&#x2295; <a href="{{page.next.url}}">{{page.next.title}}</a></li>
 {% endif %}
+</ul>
