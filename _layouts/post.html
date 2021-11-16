@@ -5,3 +5,16 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }}{% for tag in page.categories %} <a href='/tags/{{ tag }}'>#{{ tag }}</a>{% endfor %}</p>
 {{ content }}
+
+
+
+<h3>More Posts</h3>
+
+<ul>
+{% if page.previous.url %}
+  <li>&#x2296; <a href="{{page.previous.url}}">{{page.previous.title}}</a></li>
+{% endif %}
+{% if page.next.url %}
+  <li>&#x2295; <a href="{{page.next.url}}">{{page.next.title}}</a></li>
+{% endif %}
+</ul>
