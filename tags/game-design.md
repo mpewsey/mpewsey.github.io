@@ -1,4 +1,5 @@
 ---
 layout: tag
-title: game-design
+tag: game-design
+title: Game Design Posts
 ---

@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Search
 tipue_search_active: true
 ---
 

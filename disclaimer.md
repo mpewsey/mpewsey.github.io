@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Disclaimer
 ---
 
 <h1>Disclaimer</h1>

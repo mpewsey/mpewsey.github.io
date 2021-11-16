@@ -1,4 +1,5 @@
 ---
 layout: tag
-title: data-science
+tag: data-science
+title: Data Science Posts
 ---

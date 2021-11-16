@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Developed Tools
 ---
 
 # Developed Tools

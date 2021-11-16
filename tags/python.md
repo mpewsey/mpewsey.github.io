@@ -1,4 +1,5 @@
 ---
 layout: tag
-title: python
+tag: python
+title: Python Posts
 ---

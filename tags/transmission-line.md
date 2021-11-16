@@ -1,4 +1,5 @@
 ---
 layout: tag
-title: transmission-line
+tag: transmission-line
+title: Transmission Line Posts
 ---
