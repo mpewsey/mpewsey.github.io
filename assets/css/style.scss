@@ -7,13 +7,29 @@ footer a {
   display: inline;
 }
 
+.post-date-line {
+  padding-bottom: 22px;
+}
+
+.post-date {
+  padding-right: 4px;
+}
+
+.post-tag {
+  padding-right: 4px;
+}
+
+.navbar {
+  padding-bottom: 22px;
+}
+
 @media print, screen and (max-width: 720px) {
   body img {
     max-width: 100%;
     max-height: auto;
   }
 
-  body iframe {
+  .google-presentation {
     max-width: 100%;
     max-height: auto;
   }
@@ -25,7 +41,7 @@ footer a {
     max-height: auto;
   }
 
-  body iframe {
+  .google-presentation {
     max-width: 100%;
     max-height: auto;
   }
