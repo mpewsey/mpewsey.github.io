@@ -2,7 +2,7 @@
 title: An Approach to Weight-Based Battle AI
 tags: game-design data-science
 published: true
-featured_image: https://user-images.githubusercontent.com/23442063/135720966-a5125dc6-aa76-44cf-b613-9adb5c7813c7.png
+image: https://user-images.githubusercontent.com/23442063/135720966-a5125dc6-aa76-44cf-b613-9adb5c7813c7.png
 ---
 
 There are a number of ways to implement combatant AI in RPG battle games such as Dragon Quest or Pokemon. However, one simple approach is to develop a list of probabilities for all actions that a combatant can take, then draw a random action based on these probabilities. In some games, such probability lists may have been explicitly specified by designers and remained static regardless of the actual state of the battle. While in other games, more advanced logic, perhaps even incorporating combo attacks over the course of turns, may have been employed. Whatever the approach, the number of unique takes on battle AI throughout games is wide and varied. Ultimately, the implementation perhaps comes down to what features the game developers felt was most important for the gameplay, as well as what was technically and economically feasible at the time.

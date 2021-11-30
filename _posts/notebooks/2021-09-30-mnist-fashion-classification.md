@@ -2,7 +2,7 @@
 title: MNIST Fashion Classification
 tags: data-science python
 published: true
-featured_image: https://user-images.githubusercontent.com/23442063/135523288-b3c3cc24-80a9-4ee1-8c0e-e5ef7363ac8c.png
+image: https://user-images.githubusercontent.com/23442063/135523288-b3c3cc24-80a9-4ee1-8c0e-e5ef7363ac8c.png
 ---
 The MNIST fashion dataset is a popular dataset containing grayscale 28x28 pixel images of fashion items, such as shirts, shoes, and pants. This post explores the use of this dataset to train two neural network models in the identification of these garments.
 

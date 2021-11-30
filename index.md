@@ -10,8 +10,8 @@ layout: default
   <p>{{ post.date | date_to_string }}{% for tag in post.tags %} <a href='/tags/{{ tag }}'>#{{ tag }}</a>{% endfor %}</p>
   {{ post.excerpt }}
 
-  {% if post.featured_image %}
-  <img src="{{ post.featured_image }}">
+  {% if post.image %}
+  <img src="{{ post.image }}">
   {% endif %}
 
 {% endfor %}
