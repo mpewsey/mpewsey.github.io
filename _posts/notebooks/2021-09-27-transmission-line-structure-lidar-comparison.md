@@ -1,6 +1,6 @@
 ---
 title: Transmission Line Structure LiDAR Comparison
-categories: transmission-line data-science python
+tags: transmission-line data-science python
 published: true
 featured_image: https://user-images.githubusercontent.com/23442063/135368478-3468ecae-48e9-4bd2-9732-bdef8868c996.png
 ---

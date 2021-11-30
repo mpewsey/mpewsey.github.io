@@ -40,7 +40,7 @@
         <h3><a href="/tags">Tags</a></h3>
 
         {% capture tags %}
-          {% for tag in site.categories %}
+          {% for tag in site.tags %}
             {{ tag[1].size | plus: 100000 }},{{ tag[0] }},{{ tag[1].size }}
           {% endfor %}
         {% endcapture %}

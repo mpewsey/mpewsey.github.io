@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transmission Line V-String Insulator Calculations
-categories: engineering transmission-line
+tags: engineering transmission-line
 published: true
 ---
 

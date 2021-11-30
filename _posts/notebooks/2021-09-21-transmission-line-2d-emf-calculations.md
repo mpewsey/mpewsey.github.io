@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transmission Line 2D EMF Calculations
-categories: engineering transmission-line
+tags: engineering transmission-line
 published: true
 featured_image: https://user-images.githubusercontent.com/23442063/135368407-f74828d2-abd2-4319-8c1b-633ef042002b.png
 ---

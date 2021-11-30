@@ -1,6 +1,6 @@
 ---
 title: MNIST Fashion Classification
-categories: data-science python
+tags: data-science python
 published: true
 featured_image: https://user-images.githubusercontent.com/23442063/135523288-b3c3cc24-80a9-4ee1-8c0e-e5ef7363ac8c.png
 ---

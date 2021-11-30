@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Minimum Distance Between Ellipse and Point
-categories: algorithms python
+tags: algorithms python
 published: true
 ---
 This post presents two iterative methods for finding the minimum distance between a point and ellipse. The first method (Method 1) uses gradient descent to optimize the square distance formula between the point and a point on the ellipse. Meanwhile, the second method (Method 2) uses Newton's method to find the minima using the square distance formula's derivative.

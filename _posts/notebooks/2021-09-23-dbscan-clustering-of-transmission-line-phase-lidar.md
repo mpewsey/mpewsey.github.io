@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DBSCAN Clustering of Transmission Line Phase LiDAR
-categories: transmission-line data-science python
+tags: transmission-line data-science python
 published: true
 featured_image: https://user-images.githubusercontent.com/23442063/135368251-35a5a09c-4350-4dc4-8cb4-aed3880aa7ab.png
 ---

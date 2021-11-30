@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transmission Line Jumper Clearance and Minimum Line Angle Calculations
-categories: engineering transmission-line
+tags: engineering transmission-line
 published: true
 ---
 

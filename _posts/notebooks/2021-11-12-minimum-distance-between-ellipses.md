@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Minimum Distance Between Ellipses
-categories: algorithms python
+tags: algorithms python
 published: true
 ---
 This post provides an approach for calculating the minimum distance between two ellipses using gradient descent to optimize the square distance equation between points on the ellipses. 
