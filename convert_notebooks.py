@@ -142,12 +142,13 @@ def assets_path(notebook_path: str) -> str:
 
 
 def update_markdown_paths(notebook_path: str, contents: str) -> str:
-    path = assets_path(notebook_path)
-    directory = os.path.basename(path)
-    dest = os.path.join("{{ site.url }}", ASSETS_DIRECTORY, directory)
+    dest = str(ASSETS_DIRECTORY)
 
     if not dest.endswith("/"):
         dest = dest + "/"
+
+    if not dest.startswith("/"):
+        dest = "/" + dest
 
     return contents.replace("![png](", "![png](" + dest)
 
