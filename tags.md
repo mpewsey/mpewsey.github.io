@@ -9,6 +9,8 @@ This page provides a list of all tags listed in alphabetical order.
 
 {% assign sorted_tags = site.tags | sort %}
 
+<ul>
 {% for tag in sorted_tags %}
-  <div><a href='/tags/{{ tag[0] }}'>#{{ tag[0] }} ({{ tag[1].size }})</a></div>
+  <li><a href='/tags/{{ tag[0] }}'>#{{ tag[0] }} ({{ tag[1].size }})</a></li>
 {% endfor %}
+</ul>
