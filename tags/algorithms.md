@@ -1,5 +1,5 @@
 ---
 layout: tag
 tag: algorithms
-title: Algorithm Posts
+title: Algorithms Posts
 ---
