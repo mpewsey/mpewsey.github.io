@@ -142,7 +142,7 @@ def assets_path(notebook_path: str) -> str:
 
 
 def update_markdown_paths(notebook_path: str, contents: str) -> str:
-    dest = ["![png]("]
+    dest = ["![Jupyter Notebook Plot]("]
 
     if not ASSETS_DIRECTORY.startswith("/"):
         dest.append("/")
