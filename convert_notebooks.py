@@ -3,7 +3,7 @@ Convert notebooks with:
 pipenv run python convert_notebooks.py
 
 Ignore hash files and force conversion of all notebooks:
-pipenv run python convert_notebooks.py --force-build
+pipenv run python convert_notebooks.py --force
 """
 
 POSTS_DIRECTORY = "_posts/notebooks"
@@ -21,7 +21,7 @@ from glob import glob
 from subprocess import check_output
 
 
-def convert_notebooks(force_build = False):
+def convert_notebooks(force_build: bool):
     notebooks = notebook_paths()
     create_assets_path()
     create_posts_path()
@@ -142,23 +142,25 @@ def assets_path(notebook_path: str) -> str:
 
 
 def update_markdown_paths(notebook_path: str, contents: str) -> str:
-    dest = str(ASSETS_DIRECTORY)
+    dest = ["![png]("]
 
-    if not dest.endswith("/"):
-        dest = dest + "/"
+    if not ASSETS_DIRECTORY.startswith("/"):
+        dest.append("/")
 
-    if not dest.startswith("/"):
-        dest = "/" + dest
+    dest.append(ASSETS_DIRECTORY)
 
-    return contents.replace("![png](", "![png](" + dest)
+    if not ASSETS_DIRECTORY.endswith("/"):
+        dest.append("/")
+
+    return contents.replace("![png](", "".join(dest))
 
 
 def main():
-    options, _ = getopt.getopt(sys.argv[1:], "", ["force-build"])
+    options, _ = getopt.getopt(sys.argv[1:], "", ["force"])
     force_build = False
 
     for (option, _) in options:
-        if option == "--force-build":
+        if option == "--force":
             force_build = True
 
     convert_notebooks(force_build)
