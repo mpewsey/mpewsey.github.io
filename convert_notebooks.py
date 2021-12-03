@@ -89,7 +89,7 @@ def create_posts_path():
 
 
 def convert_to_markdown(notebook_path: str):
-    command = "jupyter nbconvert {} --to markdown".format(notebook_path)
+    command = f"jupyter nbconvert {notebook_path} --to markdown"
     check_output(command, shell = True)
     postprocess_markdown(notebook_path)
 
