@@ -21,7 +21,7 @@ This post will present derivations of the equations necessary to perform I-strin
 
 <!--excerpt-->
 
-### 2D Insulator Swing
+## 2D Insulator Swing
 Figure 3 shows the geometry of a swinging insulator with the following applied loads:
 
 * $ I_h = $ horizontal insulator wind load
@@ -58,7 +58,7 @@ where
 * $ \mu_v = \frac{\sum M_v}{L} = \sum(\text{Insulator Length Fraction} \times \text{Vertical Load}) = $ length-normalized vertical moment
 
 
-### 3D Insulator Swing
+## 3D Insulator Swing
 
 While insulator swing is often evaluated for tangent structures, which tend
 to have the majority of their swing occur within a single plane, in the case
@@ -86,7 +86,7 @@ $$ \vec{\Delta} = \bigg(\frac{\text{<} \mu_x, \mu_y, \mu_z \text{>}}{\sqrt{\mu_x
 Here, $ \vec{\mu_u} $ is the unit vector of the length-normalized moment.
 
 
-### Segmented Insulator Analysis
+## Segmented Insulator Analysis
 
 For insulators consisting of multiple insulator units, evaluating the insulator
 swing on a unit by unit basis may be more accurate than modeling the entire insulator
@@ -117,7 +117,7 @@ below it. The load of the insulator unit itself can be applied at its midpoint
 similar to what has been shown for the rigid insulator previously.
 
 
-### Allowable Swing Calculations
+## Allowable Swing Calculations
 
 The allowable swing angles are typically defined as the minimum (angle to the left) and maximum (angle to the right) values in which an insulator of a given length still maintains structural clearances. Rather than the exact swing angles, which were developed previously, these values can be calculated generally for a family of structures.
 
@@ -125,7 +125,7 @@ One way of determining the allowable swing angles of a structure would be to dra
 
 The most common constraints posed to an I-string insulator are to poles or tower bodies (horizontal constraints) and to their supporting tower crossarms or davit arms (vertical constraints). The following subsections will present solutions for these two common constraints. The controlling value of the the horizontal and vertical constraints should be used for swing check comparisons.
 
-#### Horizontally Constrained Insulator
+### Horizontally Constrained Insulator
 The geometry for a simple horizontally constrained insulator is shown in Figure 5. Here, $L$ is the length of the insulator and $C$ is the horizontal clearance requirement to the object of interest. Depending on the material composing the horizontally constraining feature, this clearance value may vary. For example, clearances between wood and steel components generally differ. The value of $H$ may also be reduced to account for any additional width that one might wish to account for in electrical clearance calculations, such as the width of the insulator suspension clamp or bundled conductor hardware.
 
 ![horz-swing](https://user-images.githubusercontent.com/23442063/133910329-5d5ff032-84ed-42e6-b54a-7c23b0f4516f.png)
@@ -148,7 +148,7 @@ $$
 
 The above scenario represents the allowable swing angle to a constraint to the right. For a constraint to the left, simply apply a negative sign to the value acquired to the right. For some directions, a horizontal constraint may not exist. In such a case, a suitable value to restrict uplift should be selected.
 
-#### Vertically Constrained Insulator
+### Vertically Constrained Insulator
 The geometry for a simple vertically constrained insulator is shown in Figure 6. Here, $C$ is the vertical clearance requirement to the object of interest.
 
 ![vert-swing](https://user-images.githubusercontent.com/23442063/133910327-715eac4a-ffd4-42cb-8a4d-4fd918a7950e.png)
@@ -171,10 +171,10 @@ $$
 
 Similar to the horizontally constrained case, for swing angles to the left, simply calculate the angle to the right and apply a negative sign.
 
-### Checking Constraints
+## Checking Constraints
 Using the previously presented equations, the minimum and maximum swing angles can be calculated based on the structure constraints as $ \theta_{min} = \max(\theta_{\text{horz,left}}, \theta_{\text{vert,left}}) $ and $ \theta_{max} = \min(\theta_{\text{horz,right}}, \theta_{\text{vert,right}}) $. If the actual swing angle due to loading, $\theta$, satisfies the inequality $ \theta_{min} \leq \theta \leq \theta_{max} $, then we can conclude that adequate electrical clearances are maintained for the associated loading condition.
 
-### Attachments
+## Attachments
 
 * [3D I-String Insulator Calculation Spreadsheet](https://docs.google.com/spreadsheets/d/1AZXMwEpOvPdXZ72lcm0LFi-GTuZdMfjuQqDEj00kZeY/edit?usp=sharing)
 * [Allowable I-String Insulator Swing Spreadsheet](https://docs.google.com/spreadsheets/d/1WT5FlqcNCQpfO0sFViIeza3D37eUp0kb27IZgHnAe84/edit?usp=sharing)

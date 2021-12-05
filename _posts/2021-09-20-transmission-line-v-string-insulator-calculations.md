@@ -15,7 +15,7 @@ While insulator swing calculations are generally not necessary for V-String insu
 
 <!--excerpt-->
 
-### Geometry
+## Geometry
 
 The slope angle due to the change in elevation between attachments is:
 
@@ -35,7 +35,7 @@ $$ x = L_1\cos(\theta_2 - \beta) $$
 
 $$ y = -L_1\sin(\theta_2 - \beta) $$
 
-### Allowable Load Angle
+## Allowable Load Angle
 
 If the load, $P$, is applied in-line with leg $L_1$, the tension in that leg of the insulator is exactly $P$, while the tension in leg $L_2$ is zero. Applying the load at an angle towards the right would begin to apply compression in leg $L_2$. Hence, the in-line angle is a critical point for this transition. Likewise, if the load is applied in line with leg $L_2$, we observe the opposite: an angle applied towards the left would begin to place $L_1$ in compression. Based on this, from geometry alone we can calculate the allowable line angles to prevent any leg of the insulator from going into compression as:
 
@@ -49,7 +49,7 @@ $$ \phi = \text{atan} \bigg(\frac{P_h}{P_v}\bigg)$$
 
 If suspension clamp or other wire attachment hardware clearances are a concern, this angle is likely a good estimate of the hardware swing as well, since the length of the hardware and applied hardware loads are likely small.
 
-### Insulator Tensions
+## Insulator Tensions
 
 Summing the horizontal and vertical forces at the wire attachment joint, the tensions in each leg of the V-string insulator can be solved by taking the inverse of the resulting matrix:
 
@@ -75,7 +75,7 @@ where
 * $ \alpha_2 = \phi_1 + \beta $
 * $ P_h, P_v $ = the horizontal and vertical load vector
 
-### Support Reactions
+## Support Reactions
 
 The force vectors at the insulator attachments can be acquired by decomposing the tensions in each respective insulator leg. The force vectors at the left insulator attachment are:
 
@@ -103,6 +103,6 @@ V_2
 \end{bmatrix}
 $$
 
-### Attachments
+## Attachments
 
 * [V-String Insulator Calculation Spreadsheet](https://docs.google.com/spreadsheets/d/1Z0AhDh9kc47aPcn963ZkrzOnlAIJjOKBbfTyiBObxiI/edit?usp=sharing)

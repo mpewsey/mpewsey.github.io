@@ -18,7 +18,7 @@ Personally, I feel that some important features that should be included in battl
 This post presents an approach to creating battle AI that aims to incorporate  these features using weights, which are used for calculating the probabilities for action selections.
 
 
-### Action Probability Vector
+## Action Probability Vector
 
 For this approach, we will define the probability vector for selecting a set of actions as
 
@@ -40,7 +40,7 @@ With this vector, a random action can be selected by drawing a random number bet
 ![Action Cumulative Probability Plot](https://user-images.githubusercontent.com/23442063/135720966-a5125dc6-aa76-44cf-b613-9adb5c7813c7.png)
 **Figure 1: Cumulative Probability Plot for a Set of Actions**
 
-### Action Code Weight ($ w_c $)
+## Action Code Weight ($ w_c $)
 
 The action code weight is a factor for adapting the AI to the current battle scenario based on the intent and estimated significance of the action. The weight will likely be dependent on (1) the actor, (2) the possible targets, and (3) the action parameters. In general, when calculating weights for action codes, you will want to identify one or more parameters that can be normalized based on these sources. For example, estimated hit point damage to a target can be normalized by the target's current hit points. This normalized parameter can then be used to linearly interpolate ([Lerp](https://en.wikipedia.org/wiki/Linear_interpolation)) between two weight bounds, $w_{min}$ and $w_{max}$, to produce values for $ w_c $.
 
@@ -52,7 +52,7 @@ If an action is not valid (e.g. there is not enough MP to cast it, or there is n
 
 The following sections provide some examples for action code calculations.
 
-#### Example Action Code: Deals Damage
+### Example Action Code: Deals Damage
 
 A suitable normalized parameter for the j-th target combatant is
 
@@ -66,7 +66,7 @@ The action code weight is the the maximum of the weights calculated for all targ
 
 $$ w_c = \text{max}(\{w_j\}) $$
 
-#### Example Action Code: Restores Hit Points
+### Example Action Code: Restores Hit Points
 
 Two normalized parameters seem suitable for this type of action code
 
@@ -93,7 +93,7 @@ Or if a target with missing hit points does not exist,
 
 $$ w_c = -\infty $$
 
-#### Example Action Code: Revives Combatant
+### Example Action Code: Revives Combatant
 
 If there are no downed combatants in the action's target scope,
 
@@ -107,14 +107,14 @@ Then,
 
 $$ w_c = \text{Lerp}(w_{min}, w_{max}, t) = \text{Lerp}(1, 3, t) $$
 
-### Strategy Weight ($ w_s $)
+## Strategy Weight ($ w_s $)
 
 The strategy weight allows the battle AI to be modified based on a selected battle strategy or an actor's class, e.g. warrior, cleric, or rogue. The value should likely reside on the interval [1, 2], where the right bound can be fairly flexibly defined, though extremely large values are obviously undesirable for a well rounded AI.
 
 The value is dependent on the definition of the strategy and the action code, which correlates to the action being taken. A perfectly balanced strategy would define this weight as 1 for all action codes. Whereas, an aggressive strategy would define a larger value, say 1.2, for all damage type action codes, then 1 for all others. Likewise, healing strategies would favor healing and revival action codes over damage related ones.
 
 
-### Intelligence Weight ($ w_i $)
+## Intelligence Weight ($ w_i $)
 
 The intelligence weight provides a scale factor to allow variation in the AI's intelligence based on the game difficulty and the combatant type, e.g. player support character, enemy mob, or enemy boss. This value could be derived from a number of factors, but should most likely be confined to the interval (0, 1], with "dumber" AI's intelligence weight located toward the left of the interval, and "smarter" AI to the right.
 
@@ -126,10 +126,10 @@ An example of this value for some normalized parameter, $ t $, might be
 
 $$ w_i = \text{Lerp}(10^{-7}, 1 ,t) $$
 
-### Manually Specified Weight ($w_m$)
+## Manually Specified Weight ($w_m$)
 
 The manually specified weight provides an entry point by which special behavior might be incorporated into a specific AI. Generally, it should simply be taken as 1. However, larger values will increase the chance that a particular action is selected, while smaller values will decrease it.
 
-### Final Remarks
+## Final Remarks
 
 The above presents a weight-based approach to selecting AI battle actions. In addition to actions, other parameters, such as the item to use and target to which the action will be applied, will also need to be selected. Fortunately, the approach to selecting these parameters is almost identical to that of selecting a battle action. However, instead the target or item action weights should be developed into their own probability vectors (rather than reducing to the maximum value), which are then used to draw a random value.

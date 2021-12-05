@@ -14,7 +14,7 @@ This post presents the equations for calculating the equivalent number of bolts 
 **Figure 1: Staggered Tensile Failure Path**
 <!--excerpt-->
 
-### Equivalent Number of Bolts
+## Equivalent Number of Bolts
 
 To derive an expression for the equivalent number of bolt holes for a staggered tensile failure path, first note that the net area for a staggered failure path of constant thickness is:
 
@@ -53,7 +53,7 @@ $$ n_e = n_b - n_s $$
 
 Note that this value need not be a whole number.
 
-### Critical Pitch Spacing
+## Critical Pitch Spacing
 
 For complex bolt patterns, it may not be immediately obvious which tensile failure path controls. Often times, however, the gage spacing, $g$, for a member is constant at a member connection, whereas the pitch spacing, $s$, and number of holes along the failure paths vary. Rather than calculating the net areas for each failure path, it may be easier to calculate the pitch spacing beyond which a staggered failure path will not control. For the assumption that the gage spacing is constant at the connection, this critical pitch spacing, $ s_{crit} $, occurs when the $ s^2 / 4g $ value is equal to the diameter of one bolt hole:
 
@@ -65,10 +65,10 @@ $$ s_{crit} = 2 \sqrt{g d} $$
 
 For any $ s > s_{crit} $, the failure path will not stagger, allowing it to be omitted from consideration.
 
-### Attachments
+## Attachments
 
 * [Equivalent Number of Bolts for Tension Member with Staggered Bolt Chain Spreadsheet](https://docs.google.com/spreadsheets/d/1d7dc8T0IlulbBMIf2ZLVICGpPFjc1OTMy9bnig6wXXo/edit?usp=sharing)
 
-### References
+## References
 
 [1] AISC Steel Construction Manual, 13th Ed, p. 16.1-27.

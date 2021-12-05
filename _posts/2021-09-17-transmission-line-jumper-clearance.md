@@ -15,7 +15,7 @@ This post will present equations to assist in evaluating the clearance between a
 
 <!--excerpt-->
 
-### Clearance to Structure without Jumper Support
+## Clearance to Structure without Jumper Support
 
 A simplified plan geometry for a structure without a jumper support is shown in Figure 2. The variables shown are as follows:
 
@@ -39,7 +39,7 @@ It is likely that the minimum clearance to the structure is known for a given li
 $$ \Delta_{min} = 2 \text{asin}\bigg(\frac{P+C}{P+I}\bigg)$$
 
 
-### Clearance to Structure with Jumper Support
+## Clearance to Structure with Jumper Support
 
 A simplified plan geometry for a structure with a jumper support is shown in Figure 3. The variables shown are the same as the case of the geometry without a jumper support, except that the inclusion of the horizontal offset of the jumper support, $S$, has been incorporated.
 
@@ -57,6 +57,6 @@ $$ C = (P+S)\sin\beta - P $$
 
 It is possible that this clearance is greater than the clearances afforded at the jumper attachments. Therefore, the controlling clearance should be taken as the minimum of this value and that of $I$ and $S$. If desired, the minimum line angle may also be acquired via iteration.
 
-### Attachments
+## Attachments
 
 * [Jumper Support Clearance Calculation Spreadsheet](https://docs.google.com/spreadsheets/d/15kK1xN_rxp32nFb_gX_IJxdkhPSM7J-ZyGPG0tYTuEs/edit?usp=sharing)
