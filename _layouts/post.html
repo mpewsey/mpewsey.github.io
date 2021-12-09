@@ -4,7 +4,7 @@ comments: true
 ---
 
 <h1>{{ page.title }}</h1>
-<div class="post-date-line"><span class="post-date">{{ page.date | date_to_string }}</span>{% for tag in page.tags %} <a class="post-tag" href='/tags/{{ tag }}'>#{{ tag }}</a>{% endfor %}</div>
+<div class="post-info"><span class="post-date">{{ page.date | date_to_string }}</span>{% for tag in page.tags %} <a class="post-tag" href='/tags/{{ tag }}'>#{{ tag }}</a>{% endfor %}</div>
 
 {{ content }}
 

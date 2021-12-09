@@ -7,12 +7,21 @@ footer a {
   display: inline;
 }
 
-.post-date-line {
-  padding-bottom: 22px;
+.post-info {
+  @extend p
 }
 
 .navbar {
-  padding-bottom: 22px;
+  @extend p
+}
+
+.site-title {
+  @extend h1;
+  @extend h1.header;
+}
+
+.break-line {
+  @extend h3;
 }
 
 @media print, screen and (max-width: 720px) {

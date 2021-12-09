@@ -12,7 +12,6 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    {% include head-custom.html %}
     {% include google_analytics.html %}
     {% include rss.html %}
     {% include tipuesearch.html %}
@@ -22,7 +21,7 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header">{{ site.title }}</h1>
+        <div class="site-title">{{ site.title }}</div>
 
         <!-- Links -->
         <div class="navbar">
@@ -52,7 +51,7 @@
           <div><a href='/tags/{{ tag_items[1] }}'>#{{ tag_items[1] }} ({{ tag_items[2] }})</a></div>
         {% endfor %}
 
-        <h3></h3>
+        <div class="break-line"></div>
         <div><a href="/search">Search</a> &#x25cf; <a href="/disclaimer">Disclaimer</a></div>
         <div>© {{ 'now' | date: "%Y" }} <a href="{{ site.github.owner_url }}">Matt Pewsey</a></div>
       </footer>
