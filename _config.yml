@@ -64,6 +64,8 @@ paginate: 10
 disqus:
   shortname: mpewsey
 
+google_analytics: G-5HZ0H32D9D
+
 # Build settings
 # theme: minima
 remote_theme: jekyll/minima
