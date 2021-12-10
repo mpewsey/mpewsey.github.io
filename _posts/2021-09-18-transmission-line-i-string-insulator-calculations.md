@@ -3,6 +3,7 @@ layout: post
 title: Transmission Line I-String Insulator Swing Calculations
 tags: engineering transmission-line
 published: true
+image: https://user-images.githubusercontent.com/23442063/133910315-f4e2e29b-1cb1-47fd-aab3-3605ab103cc4.jpg
 ---
 
 I-string insulators are insulators that attach to a structure at one end, via a pinned connection, and support a conductor at the other end, via a suspension clamp or other hardware. They typically consist of a series of porcelain or glass insulator bells (Figure 2) or a polymer rod (Figure 1). Their attachment to the structure via a pinned connection allows the insulator to freely swing with imbalances in wire tension loads. This flexibility helps reduce the lateral loads on transmission line structures due to temporary tension imbalances. In the event of a broken wire on a tangent or angle structure, the insulator is also capable of swinging until a new equilibrium is obtained, dissipating energy and reducing the tension that the structure must support under a broken wire scenario.
@@ -11,6 +12,8 @@ While the ability of an I-string insulator to swing is beneficial due to its fle
 
 This post will present derivations of the equations necessary to perform I-string insulator swing checks, as well as to determine the deflected wire attachment location in space for use in sag-tension or other calculations.
 
+<!--excerpt-->
+
 ![i-string-rod](https://user-images.githubusercontent.com/23442063/133910315-f4e2e29b-1cb1-47fd-aab3-3605ab103cc4.jpg)
 
 **Figure 1: Double I-String Insulator with Rods**
@@ -18,8 +21,6 @@ This post will present derivations of the equations necessary to perform I-strin
 ![i-string-bell](https://user-images.githubusercontent.com/23442063/133910316-dc962bee-29ea-4465-a756-63ee941425c8.jpg)
 
 **Figure 2: I-String Insulator with Bells**
-
-<!--excerpt-->
 
 ## 2D Insulator Swing
 Figure 3 shows the geometry of a swinging insulator with the following applied loads:

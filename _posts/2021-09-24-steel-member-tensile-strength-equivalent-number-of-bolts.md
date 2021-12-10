@@ -3,16 +3,18 @@ layout: post
 title: "Steel Member Tensile Strength: Equivalent Number of Bolts for Net Area Calculations"
 tags: engineering
 published: true
+image: https://user-images.githubusercontent.com/23442063/141645686-b517fe60-62ef-4c7e-b176-08eeab2c3498.png
 ---
 
 Structural software, such as PLS-Tower, sometimes provides a field for the number of bolts to remove from the gross area of a steel member cross section for tensile strength calculations. For scenarios when bolts at a connection are not staggered, specifying this value is rather trivial. However, for scenarios when bolts are staggered, the $ s^2 / 4g $ factor specified by §D3.2 of \[1] must be incorporated into the input value.
 
 This post presents the equations for calculating the equivalent number of bolts incorporating the $ s^2 / 4g $ value. In addition, to reduce the number of failure paths that must be considered for complex bolt patterns, an equation for the critical pitch spacing, beyond which a staggered tensile failure path will not occur, is presented.
 
+<!--excerpt-->
+
 ![Staggered Tensile Failure Path](https://user-images.githubusercontent.com/23442063/141645686-b517fe60-62ef-4c7e-b176-08eeab2c3498.png)
 
 **Figure 1: Staggered Tensile Failure Path**
-<!--excerpt-->
 
 ## Equivalent Number of Bolts
 

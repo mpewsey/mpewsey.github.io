@@ -3,17 +3,19 @@ layout: post
 title: Transmission Line Jumper Clearance and Minimum Line Angle Calculations
 tags: engineering transmission-line
 published: true
+image: https://user-images.githubusercontent.com/23442063/133910107-3e4faf72-124a-4ac5-880f-aedefddafeb4.png
 ---
 
 In order to maintain electrical clearances within transmission line dead-end structures, jumper supports, such as horizontal posts or I-string insulators supported on davit arms, are occasionally required in order to restrain the jumper away from the structure. Most often, they are required for in-line dead-ends (structures with no line angle) or dead-ends with small line angles; whereas, structures with large line angles, such as that shown in Figure 1, do not require jumper supports since the length of the insulators alone provide an adequate offset distance from the structure.
 
 This post will present equations to assist in evaluating the clearance between a jumper and pole with and without jumper supports. In addition, an equation to calculate the minimum line angle required in order to maintain electrical clearances to the pole for a structure without a jumper support will be presented, as this value can be beneficial in making general design decisions or specifying limits for structures within design standards.
 
+<!--excerpt-->
+
 ![structure-no-jumper-support](https://user-images.githubusercontent.com/23442063/133910107-3e4faf72-124a-4ac5-880f-aedefddafeb4.png)
 
 **Figure 1: Structure without Jumper Support**
 
-<!--excerpt-->
 
 ## Clearance to Structure without Jumper Support
 
