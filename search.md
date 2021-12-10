@@ -1,10 +1,8 @@
 ---
-layout: default
+layout: page
 title: Search
 tipue_search_active: true
 ---
-
-<h1>Search Posts</h1>
 
 <form action="{{ page.url | relative_url }}">
   <div class="tipue_search_left"><img src="{{ "/assets/tipuesearch/search.png" | relative_url }}" class="tipue_search_icon"></div>

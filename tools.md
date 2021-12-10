@@ -1,11 +1,9 @@
 ---
-layout: default
+layout: page
 title: Tools
 ---
 
-# Tools
-
-This page provides links to some of the open source programming libraries and spreadsheets that I have developed. It will be updated with new content over time.
+This page provides links to some of the open source programming libraries and spreadsheets that I've developed. It will be updated with new content over time.
 
 ## Civil Engineering
 

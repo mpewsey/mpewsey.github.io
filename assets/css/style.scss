@@ -1,49 +1,9 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "minima/skins/{{ site.minima.skin | default: 'classic' }}";
+@import "minima/initialize";
 
-footer a {
-  display: inline;
-}
-
-.post-info {
-  @extend p
-}
-
-.navbar {
-  @extend p
-}
-
-.site-title {
-  @extend h1;
-  @extend h1.header;
-}
-
-.break-line {
-  @extend h3;
-}
-
-@media print, screen and (max-width: 720px) {
-  body img {
-    max-width: 100%;
-    max-height: auto;
-  }
-
-  .google-presentation {
-    max-width: 100%;
-    max-height: auto;
-  }
-}
-
-@media print, screen and (max-width: 480px) {
-  body img {
-    max-width: 100%;
-    max-height: auto;
-  }
-
-  .google-presentation {
-    max-width: 100%;
-    max-height: auto;
-  }
+.tipue_search_spinner > div {
+  background-color: inherit !important;
 }
