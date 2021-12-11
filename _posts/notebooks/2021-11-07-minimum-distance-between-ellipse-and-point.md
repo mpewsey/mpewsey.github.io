@@ -11,7 +11,7 @@ This post presents two iterative methods for finding the minimum distance betwee
 
 ![Ellipse-Point Diagram](https://user-images.githubusercontent.com/23442063/141517132-d4dd4006-5197-4dfd-844c-c632f88b4818.png)
 
-**Figure 1: Ellipse and Point Geometry**
+<span class="figure-title">Figure 1: Ellipse and Point Geometry</span>
 
 ## Equation Development
 

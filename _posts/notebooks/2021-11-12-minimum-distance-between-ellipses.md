@@ -11,7 +11,7 @@ This post provides an approach for calculating the minimum distance between two 
 
 ![Ellipse Diagram](https://user-images.githubusercontent.com/23442063/141688026-3004a50a-a58e-4a3f-8f60-0624c966ebf7.png)
 
-**Figure 1: Ellipse Geometry**
+<span class="figure-title">Figure 1: Ellipse Geometry</span>
 
 ## Equation Development
 
