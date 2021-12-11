@@ -14,7 +14,7 @@ This post presents the equations for calculating the equivalent number of bolts 
 
 ![Staggered Tensile Failure Path](https://user-images.githubusercontent.com/23442063/141645686-b517fe60-62ef-4c7e-b176-08eeab2c3498.png)
 
-**Figure 1: Staggered Tensile Failure Path**
+<span class="figure-title">Figure 1: Staggered Tensile Failure Path</span>
 
 ## Equivalent Number of Bolts
 

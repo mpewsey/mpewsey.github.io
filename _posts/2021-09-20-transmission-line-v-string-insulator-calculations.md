@@ -14,7 +14,7 @@ While insulator swing calculations are generally not necessary for V-String insu
 
 ![v-string](https://user-images.githubusercontent.com/23442063/133932936-39502247-37f4-4c32-90f8-6eec619d0ff9.png)
 
-**Figure 1: V-String Insulator Geometry**
+<span class="figure-title">Figure 1: V-String Insulator Geometry</span>
 
 
 ## Geometry

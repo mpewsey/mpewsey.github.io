@@ -16,11 +16,11 @@ This post will present derivations of the equations necessary to perform I-strin
 
 ![i-string-rod](https://user-images.githubusercontent.com/23442063/133910315-f4e2e29b-1cb1-47fd-aab3-3605ab103cc4.jpg)
 
-**Figure 1: Double I-String Insulator with Rods**
+<span class="figure-title">Figure 1: Double I-String Insulator with Rods</span>
 
 ![i-string-bell](https://user-images.githubusercontent.com/23442063/133910316-dc962bee-29ea-4465-a756-63ee941425c8.jpg)
 
-**Figure 2: I-String Insulator with Bells**
+<span class="figure-title">Figure 2: I-String Insulator with Bells</span>
 
 ## 2D Insulator Swing
 Figure 3 shows the geometry of a swinging insulator with the following applied loads:
@@ -32,7 +32,7 @@ Figure 3 shows the geometry of a swinging insulator with the following applied l
 
 ![insl-swing](https://user-images.githubusercontent.com/23442063/133910317-7d82dbd0-5b06-4b24-998b-ba0ae7789c3a.png)
 
-**Figure 3: 2D I-String Insulator Geometry**
+<span class="figure-title">Figure 3: 2D I-String Insulator Geometry</span>
 
 To find the swing angle resulting from the above loads, we can sum moments about the
 structure attachment:
@@ -99,15 +99,15 @@ those pictured in Figures 5 and 6 can occur.
 
 ![insl-comparison-3](https://user-images.githubusercontent.com/23442063/133910318-8e0749c2-9741-46a6-8b01-b3079fcf1961.png)
 
-**Figure 4: FE Insulator Comparison (Wire Loads $>>$ Insulator Loads)**
+<span class="figure-title">Figure 4: FE Insulator Comparison (Wire Loads $>>$ Insulator Loads)</span>
 
 ![insl-comparison-1](https://user-images.githubusercontent.com/23442063/133910322-c83e1f9b-a316-4a51-923e-77afbabb3666.png)
 
-**Figure 5: FE Insulator Comparison (Wire Loads $ \propto $ Insulator Loads)**
+<span class="figure-title">Figure 5: FE Insulator Comparison (Wire Loads $ \propto $ Insulator Loads)</span>
 
 ![insl-comparison-2](https://user-images.githubusercontent.com/23442063/133910323-ae3ba5cf-0e07-4e25-86d7-f67601f9c55c.png)
 
-**Figure 6: FE Insulator Comparison (Uplift Wire Loads $ \propto $ Insulator Loads)**
+<span class="figure-title">Figure 6: FE Insulator Comparison (Uplift Wire Loads $ \propto $ Insulator Loads)<span>
 
 The analysis of a segmented insulator is relatively simple: using the insulator
 deflection equations developed previously, simply calculate the deflections on
@@ -131,7 +131,7 @@ The geometry for a simple horizontally constrained insulator is shown in Figure 
 
 ![horz-swing](https://user-images.githubusercontent.com/23442063/133910329-5d5ff032-84ed-42e6-b54a-7c23b0f4516f.png)
 
-**Figure 5: Horizontally Constrained Swing Geometry**
+<span class="figure-title">Figure 5: Horizontally Constrained Swing Geometry</span>
 
 To calculate the allowable swing angle, $\theta$, we will rotate the insulator to the left by angle $\beta$ to simplify the geometry, then write the equation along a horizontal line:
 
@@ -154,7 +154,7 @@ The geometry for a simple vertically constrained insulator is shown in Figure 6.
 
 ![vert-swing](https://user-images.githubusercontent.com/23442063/133910327-715eac4a-ffd4-42cb-8a4d-4fd918a7950e.png)
 
-**Figure 6: Vertically Constrained Swing Geometry**
+<span class="figure-title">Figure 6: Vertically Constrained Swing Geometry</span>
 
 To calculate the allowable swing angle, $\theta$, we will rotate the insulator of the left by angle $\beta$ to simplify the geometry, as was done with the horizontally constrained case. However, instead, we will write the equation along the resulting vertical line.
 

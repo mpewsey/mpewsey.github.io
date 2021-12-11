@@ -38,7 +38,7 @@ Here, the [softmax](https://en.wikipedia.org/wiki/Softmax_function) function sim
 With this vector, a random action can be selected by drawing a random number between 0 and 1, then finding the first element in the cumulative probability vector that is both greater than zero and greater than or equal to the random number, as shown in Figure 1.
 
 ![Action Cumulative Probability Plot](https://user-images.githubusercontent.com/23442063/135720966-a5125dc6-aa76-44cf-b613-9adb5c7813c7.png)
-**Figure 1: Cumulative Probability Plot for a Set of Actions**
+<span class="figure-title">Figure 1: Cumulative Probability Plot for a Set of Actions</span>
 
 ## Action Code Weight ($ w_c $)
 

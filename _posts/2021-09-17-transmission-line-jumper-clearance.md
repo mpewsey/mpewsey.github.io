@@ -14,7 +14,7 @@ This post will present equations to assist in evaluating the clearance between a
 
 ![structure-no-jumper-support](https://user-images.githubusercontent.com/23442063/133910107-3e4faf72-124a-4ac5-880f-aedefddafeb4.png)
 
-**Figure 1: Structure without Jumper Support**
+<span class="figure-title">Figure 1: Structure without Jumper Support</span>
 
 
 ## Clearance to Structure without Jumper Support
@@ -28,7 +28,7 @@ A simplified plan geometry for a structure without a jumper support is shown in 
 
 ![no-jumper-support](https://user-images.githubusercontent.com/23442063/133910109-e7aa777b-8c7c-418b-8856-d588db978276.png)
 
-**Figure 2: Clearance to Structure with No Jumper Support**
+<span class="figure-title">Figure 2: Clearance to Structure with No Jumper Support</span>
 
 In this figure, the jumper is assumed to follow a straight line between the insulator attachments at the right ends of segments $I$. For short jumpers, this is likely conservative, even when blowout of the wire is considered, since most likely the strain clamps or jumper terminals at the ends of the jumpers are set such that the hardware angles the jumper away from the structure and provides sufficient rigidity to prevent the blow in of the wire towards the pole. In the event the blowout of the jumper towards the structure is a design concern, such as in the case of long jumpers, additional buffers to the required clearance could be added. Also, in the event of steep inclines where the insulators slope downward, the distance used for $I$ should be the horizontal offset of the insulator attachment point rather than the full insulator length.
 
@@ -47,7 +47,7 @@ A simplified plan geometry for a structure with a jumper support is shown in Fig
 
 ![jumper-support](https://user-images.githubusercontent.com/23442063/133910112-95cf209d-7651-44a1-86c0-8afcf31e2acc.png)
 
-**Figure 3: Clearance to Structure with Jumper Support**
+<span class="figure-title">Figure 3: Clearance to Structure with Jumper Support</span>
 
 From this geometry, the angle $\beta$ is:
 
