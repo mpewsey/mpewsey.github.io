@@ -22,7 +22,7 @@ This post presents an approach to creating battle AI that aims to incorporate  t
 
 For this approach, we will define the probability vector for selecting a set of actions as
 
-$$ \vec{p} = \text{softmax} ( w_i w_s w_c w_m ) $$
+$$ \vec{p} = \text{softmax} ( \{ w_i w_s w_c w_m \} ) $$
 
 where
 
