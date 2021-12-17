@@ -19,6 +19,7 @@ minima:
   social_links:
     # twitter: jekyllrb
     github:  mpewsey
+    rss: rss
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll

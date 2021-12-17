@@ -4,8 +4,7 @@
   <div class="wrapper">
     <div class="footer-col-wrapper">
       <div class="footer-col">
-        <a href="{{ 'feed.xml' | relative_url }}">RSS Feed</a>
-        • <a href="{{ 'disclaimer.html' | relative_url }}">Disclaimer</a>
+        <a href="{{ 'disclaimer.html' | relative_url }}">Disclaimer</a>
         {% if site.author and site.author.name -%}
           • © {{ 'now' | date: "%Y" }} {{ site.author.name | escape }}
         {% endif -%}
