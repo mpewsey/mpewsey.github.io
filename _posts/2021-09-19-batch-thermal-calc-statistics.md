@@ -2,7 +2,7 @@
 layout: post
 title: Statistical Evaluation of PLS-CADD Batch Thermal Calculator Results
 tags: engineering transmission-line data-science
-published: true
+mathjax: false
 ---
 
 This is a presentation I gave on using statistics to identify outliers and potential input errors in PLS-CADD batch thermal calculations.

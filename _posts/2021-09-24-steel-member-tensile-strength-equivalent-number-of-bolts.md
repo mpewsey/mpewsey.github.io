@@ -2,7 +2,7 @@
 layout: post
 title: "Steel Member Tensile Strength: Equivalent Number of Bolts for Net Area Calculations"
 tags: engineering
-published: true
+mathjax: true
 image: https://user-images.githubusercontent.com/23442063/141645686-b517fe60-62ef-4c7e-b176-08eeab2c3498.png
 ---
 

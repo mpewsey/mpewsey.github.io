@@ -2,7 +2,7 @@
 layout: post
 title: Transmission Line Jumper Clearance and Minimum Line Angle Calculations
 tags: engineering transmission-line
-published: true
+mathjax: true
 image: https://user-images.githubusercontent.com/23442063/133910107-3e4faf72-124a-4ac5-880f-aedefddafeb4.png
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: An Approach to Weight-Based Battle AI
 tags: game-design data-science
-published: true
+mathjax: true
 image: https://user-images.githubusercontent.com/23442063/135720966-a5125dc6-aa76-44cf-b613-9adb5c7813c7.png
 ---
 

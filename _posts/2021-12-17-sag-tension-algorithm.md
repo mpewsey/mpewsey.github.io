@@ -2,7 +2,7 @@
 layout: post
 title: Wire Sag-Tension Algorithm
 tags: transmission-line algorithms
-published: true
+mathjax: true
 image: https://user-images.githubusercontent.com/23442063/146563486-08d98f4d-eacc-4279-b255-00f934c19e96.png
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Transmission Line I-String Insulator Swing Calculations
 tags: engineering transmission-line
-published: true
+mathjax: true
 image: https://user-images.githubusercontent.com/23442063/133910315-f4e2e29b-1cb1-47fd-aab3-3605ab103cc4.jpg
 ---
 

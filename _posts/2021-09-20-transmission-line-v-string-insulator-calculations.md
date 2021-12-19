@@ -2,7 +2,7 @@
 layout: post
 title: Transmission Line V-String Insulator Calculations
 tags: engineering transmission-line
-published: true
+mathjax: true
 image: https://user-images.githubusercontent.com/23442063/133932936-39502247-37f4-4c32-90f8-6eec619d0ff9.png
 ---
 
