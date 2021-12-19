@@ -2,7 +2,7 @@
 layout: post
 title: Transmission Line 2D EMF Calculations
 tags: engineering transmission-line
-published: true
+mathjax: true
 image: https://user-images.githubusercontent.com/23442063/135368407-f74828d2-abd2-4319-8c1b-633ef042002b.png
 ---
 In the United States, the magnetic and electric fields of transmission lines are not nationally regulated. However, some states have their own set of regulations as to their maximum values within the right-of-way and/or at the edge of the right-of-way. For example, in the state of <a href='https://www.flrules.org/gateway/readFile.asp?sid=0&tid=0&cno=62-814&caid=1028702&type=4&file=62-814.doc'>Florida</a>, for new 500kV or greater transmission lines, the maximum electric and magnetic fields at the edge of the right-of-way, 1 meter above ground, are 5.5 kV/m and 250 mG, respectively. In addition, the maximum electric field within the right-of-way is 15 kV/m at 1 meter above the ground. To provide a clearer picture of what goes into these calculations, this post breaks down the steps necessary to calculate the magnetic and electric fields of a transmission line using 2D calculations.

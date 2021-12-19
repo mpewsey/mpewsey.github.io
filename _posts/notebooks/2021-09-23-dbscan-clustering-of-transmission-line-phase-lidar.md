@@ -2,7 +2,7 @@
 layout: post
 title: DBSCAN Clustering of Transmission Line Phase LiDAR
 tags: transmission-line data-science python
-published: true
+mathjax: false
 image: https://user-images.githubusercontent.com/23442063/135368251-35a5a09c-4350-4dc4-8cb4-aed3880aa7ab.png
 ---
 Sometimes utility standards or PLS-CADD graphical sagging requirements necessitate that the different transmission line phases be divided into different feature codes. However, depending on who processes the LiDAR data, the LiDAR received from transmission line surveys may or may not include the phases on different feature codes. Therefore, in these scenarios, it falls on the designer to separate the data themselves. In the event of large data sets or complex phase rolls, this process may be tedious and time consuming.

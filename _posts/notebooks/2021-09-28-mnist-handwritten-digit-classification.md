@@ -1,7 +1,7 @@
 ---
 title: MNIST Handwritten Digit Classification
 tags: data-science python
-published: true
+mathjax: false
 image: https://user-images.githubusercontent.com/23442063/135366026-e1099798-3af4-425d-b477-5c1cd631d6dd.png
 ---
 The MNIST handwritten digit dataset is a popular dataset containing grayscale 28x28 pixel images of handwritten digits. This post explores the use of this dataset to train two neural network models in the identification of handwritten digits.
