@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Use Jupyter Notebooks for GitHub Pages Posts
-tags: python
+tags: python jupyter jekyll github-pages
 mathjax: false
 image: https://user-images.githubusercontent.com/23442063/144757976-66f7ef35-cc7e-4912-a7cc-e5bb665f571b.png
 ---
