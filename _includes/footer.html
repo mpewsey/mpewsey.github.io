@@ -18,5 +18,7 @@
     </div>
 
   </div>
-  {% include disqus_footer.html %}
+  {%- if site.disqus.shortname -%}
+    {% include disqus_footer.html %}
+  {%- endif -%}
 </footer>
