@@ -433,7 +433,7 @@ The "Initial" sags and tensions can be acquired by assuming the plastic strains 
 
 ## Final Remarks
 
-With that, the sag-tension algorithm is complete. This is a fairly complicated post, so I wouldn't be surprised if I've made a mistake somewhere. Feel free to post questions or corrections in the comments.
+With that, the sag-tension algorithm is complete. This is a fairly complicated post, so I wouldn't be surprised if I've made a mistake somewhere.
 
 ## References
 
