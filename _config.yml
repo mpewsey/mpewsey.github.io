@@ -62,8 +62,8 @@ header_pages:
 
 paginate: 10
 
-disqus:
-  shortname: mpewsey
+# disqus:
+  # shortname: mpewsey
 
 google_analytics: G-5HZ0H32D9D
 
