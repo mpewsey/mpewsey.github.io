@@ -52,4 +52,4 @@ Here, the shift of $W_d$ by 1 accounts for the scenario where a collectable spot
 
 ## Conclusion
 
-With the weights calculated for each collectable spot, we can draw a collectable spot by computing the cumulative sums of the weights, drawing a random number $w$ between 0 and the total weight, and finding the index where $0 < W[i] \leq w$. Once the collectable spot has been used, we then update the neighbor weights $W_n$ for the remaining collectable spots within the scope of the drawn collectable, and repeat until all collectables have been allocated to a location.
+With the weights calculated for each collectable spot, we can draw a collectable spot by computing the cumulative sums of the weights, drawing a random number $w$ between 0 and the total weight, and finding the index where $w \leq W[i]$ and $W[i] > 0$. Once the collectable spot has been used, we then update the neighbor weights $W_n$ for the remaining collectable spots within the scope of the drawn collectable, and repeat until all collectables have been allocated to a location.
