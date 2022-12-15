@@ -7,4 +7,4 @@ title: Contact
 
 * For questions or comments regarding posts or other content, please use the [Dicussions Board](https://github.com/mpewsey/mpewsey.github.io/discussions).
 
-* For private concerns, recite `moc tod liamg ta yeswepttam` to yourself until the contact method becomes clear.
+* For private concerns, chant `moc tod liamg ta yeswepttam` omninously aloud until the contact method becomes clear.
