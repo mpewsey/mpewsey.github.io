@@ -7,4 +7,4 @@ For errors, corrections, or feature requests regarding the website, posts, or sp
 
 For questions or comments regarding posts or other content, please use the [Dicussions Board](https://github.com/mpewsey/mpewsey.github.io/discussions).
 
-For private concerns, recite `moc tod liamg ta yeswepttam` until the method becomes clear.
+For private concerns, recite `moc tod liamg ta yeswepttam` until the contact method becomes clear.
