@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contact Info
+title: Contact
 ---
 
 * For errors, corrections, or feature requests regarding the website, posts, or spreadsheet tools, please submit an [Issue](https://github.com/mpewsey/mpewsey.github.io/issues).
