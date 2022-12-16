@@ -46,7 +46,7 @@ header_pages:
   - contact.md
   - search.md
 
-paginate: 5
+paginate: 10
 
 # disqus:
   # shortname: mpewsey
