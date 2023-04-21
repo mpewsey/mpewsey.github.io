@@ -55,7 +55,7 @@ google_analytics: G-5HZ0H32D9D
 
 # Build settings
 # theme: minima
-remote_theme: jekyll/minima
+remote_theme: mpewsey/minima
 
 plugins:
  - jekyll-feed
