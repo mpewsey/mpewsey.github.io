@@ -87,4 +87,4 @@ where
 * $ F_m $ = the force magnitude.
 * $ x_a $ = the normalized direction toward the pit.
 
-On the surface, 2D pit physics seem relatively simplistic. However, after delving deeper into this problem, I have a newfound respect for the experiences that game developers, such as those for _Link's Awakening_, have managed to craft in the past. 
+And with that, our pit physics is complete!
