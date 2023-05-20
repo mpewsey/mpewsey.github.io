@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Contemplating Physics for Pits in Top-Down 2D Games
+title: Physics for Pits in Top-Down 2D Games
 tags: game-design unity
 mathjax: true
 image: https://github.com/mpewsey/mpewsey.github.io/assets/23442063/9e10241e-8996-4f46-be62-7838b2121c41
