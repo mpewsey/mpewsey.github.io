@@ -25,3 +25,4 @@ In a notebook folder:
 pipenv install
 pipenv run jupyter notebook
 ```
+ 
