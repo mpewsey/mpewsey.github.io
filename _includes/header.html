@@ -4,7 +4,7 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <img style="height:auto;float:left;margin-top:6px;margin-right:8px;border-radius:50%;border:1px solid #e8e8e8;" src="{{ "apple-touch-icon.png" | relative_url }}" height="40" width="40">
+    <img style="height:auto;float:left;margin-top:6px;margin-right:8px;border-radius:50%;border:1px solid #e8e8e8;" src="{{ "android-chrome-512x512.png" | relative_url }}" height="40" width="40">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
     {%- if titles_size > 0 -%}
