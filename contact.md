@@ -9,4 +9,4 @@ title: Contact
 
 * For general questions or comments not relating to posts, please use the [Dicussions Board](https://github.com/mpewsey/mpewsey.github.io/discussions).
 
-* The documentation for several of my GitHub repositories are also hosted as extensions of this URL. If you have a question regarding one of those projects, please make those inquiries on the respective GitHub repository. You can find the specific repository using the [GitHub](https://github.com/) search bar.
+* The documentation for several of my GitHub repositories are also hosted at extensions of this URL. If you have a question regarding one of those projects, please make those inquiries on the respective GitHub repository. You can find the specific repository by searching on [GitHub](https://github.com/).
