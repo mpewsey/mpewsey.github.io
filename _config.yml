@@ -22,7 +22,6 @@ minima:
     #- { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
     #- { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
     - { platform: github,         user_url: "https://github.com/mpewsey" }
-    - { platform: rss,            user_url: "https://mpewsey.github.io/feed.xml"}
     #- { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=qc6CJjYAAAAJ" }
     #- { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
     #- { platform: keybase,        user_url: "https://keybase.io/jekyll" }
@@ -33,6 +32,8 @@ minima:
     #- { platform: telegram,       user_url: "https://t.me/jekyll" }
     #- { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
     - { platform: youtube,        user_url: "https://www.youtube.com/@mpewsey" }
+    - { platform: bluesky,        user_url: "https://bsky.app/profile/mpewsey.bsky.social" }
+    - { platform: rss,            user_url: "https://mpewsey.github.io/feed.xml"}
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
