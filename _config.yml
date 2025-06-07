@@ -31,7 +31,7 @@ minima:
     #- { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
     #- { platform: telegram,       user_url: "https://t.me/jekyll" }
     #- { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
-    # - { platform: youtube,        user_url: "https://www.youtube.com/@mpewsey" }
+    - { platform: youtube,        user_url: "https://www.youtube.com/@mpewsey" }
     # - { platform: bluesky,        user_url: "https://bsky.app/profile/mpewsey.bsky.social" }
     - { platform: rss,            user_url: "https://mpewsey.github.io/feed.xml"}
 
