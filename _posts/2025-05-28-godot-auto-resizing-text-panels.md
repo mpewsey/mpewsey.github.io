@@ -3,6 +3,7 @@ layout: post
 title: How to Make Auto-Resizing Text Panels in Godot
 tags: game-design godot
 mathjax: false
+published: false
 image: https://github.com/user-attachments/assets/2a747245-f7a1-4f95-b741-d7be108125bc
 ---
 
