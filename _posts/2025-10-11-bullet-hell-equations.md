@@ -4,7 +4,7 @@ title: 2D Bullet Hell Equations
 tags: game-design
 mathjax: true
 published: false
-image: https://user-images.githubusercontent.com/23442063/133910107-3e4faf72-124a-4ac5-880f-aedefddafeb4.png
+image: https://github.com/user-attachments/assets/7b0d5263-10c6-4bd1-b01b-bfbb0e321939
 ---
 
 This post provides a listing of waveform equations that may be useful for applying unusual trajectories to bullets in bullet hell games.
@@ -25,7 +25,7 @@ The following variables are used throughout the equations:
 
 ### Linear Movement
 
-![Linear Movement](https://user-images.githubusercontent.com/23442063/133910107-3e4faf72-124a-4ac5-880f-aedefddafeb4.png)
+![Linear Movement](https://github.com/user-attachments/assets/648fc49e-1245-4d6a-93e7-93d056929cce)
 
 Position:
 
@@ -39,7 +39,7 @@ Velocity:
 
 ### Sinusoidal Movement
 
-![Sinusoidal Movement](https://user-images.githubusercontent.com/23442063/133910107-3e4faf72-124a-4ac5-880f-aedefddafeb4.png)
+![Sinusoidal Movement](https://github.com/user-attachments/assets/7b0d5263-10c6-4bd1-b01b-bfbb0e321939)
 
 Position:
 
@@ -53,7 +53,7 @@ Velocity:
 
 ### Sawtooth Movement
 
-![Sawtooth Movement](https://user-images.githubusercontent.com/23442063/133910107-3e4faf72-124a-4ac5-880f-aedefddafeb4.png)
+![Sawtooth Movement](https://github.com/user-attachments/assets/f7e9fefa-3445-4943-98ad-5bfb49af58a8)
 
 Velocity:
 
