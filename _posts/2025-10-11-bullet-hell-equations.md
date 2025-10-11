@@ -3,7 +3,6 @@ layout: post
 title: 2D Bullet Hell Equations
 tags: game-design
 mathjax: true
-published: false
 image: https://github.com/user-attachments/assets/7b0d5263-10c6-4bd1-b01b-bfbb0e321939
 ---
 
