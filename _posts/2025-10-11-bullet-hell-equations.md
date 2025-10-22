@@ -61,6 +61,11 @@ Velocity:
 
 ### Circular Movement
 
+Position:
+
+* $ x(t) = A \cos(F t) + S t + x_0 $
+* $ y(t) = A \sin(F t) + y_0 $
+
 Velocity:
 
 * $ v_x(t) = -A F \sin(F t) + S $
