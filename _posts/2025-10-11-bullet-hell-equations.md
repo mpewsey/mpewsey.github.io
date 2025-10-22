@@ -59,6 +59,13 @@ Velocity:
 * $ v_x(t) = S $
 * $ v_y(t) = \text{sign}(A F \cos(F t)) \cdot 2 A F / \pi $
 
+### Circular Movement
+
+Velocity:
+
+* $ v_x(t) = -A F \sin(F t) + S $
+* $ v_y(t) = A F \cos(F t) $
+
 ### Applying Rotation
 
 To rotate the coordinates provides in the equations to a desired direction, let's define the primary bullet travel direction to be $\theta$ from the global x-axis. The unit vector in that direction is:
