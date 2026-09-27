@@ -226,6 +226,7 @@ public partial class PlayerNavigation : Node
 
     public void GrabFocus(Control focus)
     {
+        CurrentPlayerId = PlayerId;
         focus = IsInstanceValid(focus) ? focus : null;
         var lastFocus = IsInstanceValid(Focus) ? Focus : null;
 
@@ -239,6 +240,7 @@ public partial class PlayerNavigation : Node
 
     public void ReleaseFocus()
     {
+        CurrentPlayerId = PlayerId;
         GetFocusNavigation()?.OnFocusExited();
         Focus = null;
     }
